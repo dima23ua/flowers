@@ -1,0 +1,118 @@
+//Подключение шрифтов
+@import "fonts";
+@import "libs";
+
+* {
+	box-sizing: border-box;
+}
+html, 
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	font-family: "TTNorms", sans-serif;
+	font-weight: 400;
+	background-color: #fff;
+	overflow-anchor: none;
+	min-width: 375px;
+	font-size: 16px;
+}
+html.lock {
+	overflow: hidden;
+}
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+.container {
+	max-width: 1215px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+img {
+	width: 100%;
+	display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+ul, li, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+::after, :before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+input, button, textarea {
+	font: inherit;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+}
+label {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+select {
+	outline: none;
+	border: none;
+	background: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+::before,
+::after {
+	box-sizing: border-box
+}
+.main {
+		height: 500px;
+}
+:root {
+	--gray: #505567;
+	--dark: #1b1c21;
+	--silver-light: #f2f3f5;
+	--silver: #7d818e;
+	--green: #0093a2;
+	--white: #fff;
+	--light-blue: #1b1c40;
+	--red: #e31059;
+	--icon-border: #e2e4e8;
+	--title: #222a46;
+	--line: #d7d9dc;
+}
+//Стили компонентов
+@import "components";
+
+
+
+
+@import "elements/mobile-bottom-panel"; 
+
+@import "popups/catalog-menu"; 
+@import "popups/mobile-menu"; 
+@import "popups/callback"; 
+
+//Адаптация под мобильніе устойства
+@import "adaptive";
+
