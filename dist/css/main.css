@@ -1972,6 +1972,7 @@ body.pc .header-bottom-nav__item:hover .header-bottom-submenu {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10000;
+  cursor: pointer;
 }
 
 .product-slider .swiper-button-prev {
@@ -1982,6 +1983,11 @@ body.pc .header-bottom-nav__item:hover .header-bottom-submenu {
   right: -20px;
 }
 
+.product-slider .swiper-button-prev,
+.product-slider .swiper-button-next:hover .swiper-arrow {
+  color: var(--green);
+}
+
 .product-slider .swiper-button-prev .swiper-arrow {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -1990,6 +1996,7 @@ body.pc .header-bottom-nav__item:hover .header-bottom-submenu {
 }
 
 .swiper-arrow {
+  color: var(--dark);
   width: 10px;
   height: 12px;
   margin-left: 2px;
