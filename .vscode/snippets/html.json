@@ -71,17 +71,18 @@
          ],
          "description": "Snippet for social links"
       },
-      "basicform": {
+      "form": {
          "prefix": "d-form",
          "body": [
             "<!-- Form -->",
             "<form action=\"#\" method=\"post\" class=\"form\" id=\"form\">",
-            "  <label class=\"form__label\">",
-            "    <input type=\"text\" name=\"Имя\" class=\"input-reset form__input\" placeholder=\"Имя\">",
-            "  </label>",
-            "  <div class=\"button\">",
-            "     <button class=\"btn-reset form__btn\">Отправить</button>",
-            "  </div>                       ",
+            "   <div class=\"form__label-block\">",
+            "      <label for=\"#formName\" class=\"form__label\"></label>",
+            "      <input id=\"formName\" type=\"text\" name=\"name\" class=\"form__input\" placeholder=\"Имя\">",
+            "   </div>",
+            "   <div class=\"button\">",
+            "     <button class=\"button__link\">Отправить</button>",
+            "   </div>                       ",
             "</form>",
             "<!-- Form - end -->"
          ],
@@ -90,31 +91,31 @@
       "swiper": {
          "prefix": "d-swiper",
          "body": [
-            "<!-- Слайдер -->",
+            "<!-- slider -->",
             "<div class=\"slider swiper-content\">",
-            "  <div class=\"slider__wrapper swiper-wrapper\">",
-            "     <!--Слайд-1-->",
-            "     <div class=\"slider__slide swiper-slide\">",
+            "   <div class=\"slider__wrapper swiper-wrapper\">",
+            "      <!--slide-1-->",
+            "      <div class=\"slider__slide swiper-slide\">",
             "                         ",
-            "     </div>",
-            "     <!--Слайд-2-->",
-            "     <div class=\"slider__slide swiper-slide\">",
+            "      </div>",
+            "      <!--slide-2-->",
+            "      <div class=\"slider__slide swiper-slide\">",
             "                         ",
-            "     </div>",
-            "     <!--Слайд-3-->",
-            "     <div class=\"slider__slide swiper-slide\">",
+            "      </div>",
+            "      <!--slide-3-->",
+            "      <div class=\"slider__slide swiper-slide\">",
             "                         ",
-            "     </div>",
-            "  </div>",
-            "  <!-- Кнопки навигации -->",
+            "      </div>",
+            "   </div>",
+            "   <!-- navigation -->",
             "  <div class=\"slider swiper-buttons\">",
             "     <div class=\"slider swiper-button-prev\"></div>",
             "     <div class=\"slider swiper-button-next\"></div>",
             "  </div>",
-            "  <!-- Пагинация -->",
+            "  <!-- pagination -->",
             "  <div class=\"swiper-pagination\"></div>",
             "</div>",
-            "<!-- Слайдер - end -->"
+            "<!-- slider - end -->"
          ],
          "description": "Snippet for basic swiper structure"
       },
@@ -140,7 +141,7 @@
       "picture": {
          "prefix": "d-picture",
          "body": [
-            "<!-- Картинка -->",
+            "<!-- picture -->",
             "  <img loading=\"lazy\" src=\"@img\" alt=\"$3\" title=\"$4\">"
          ],
          "description": "Snippet for basic logo structure"
@@ -194,5 +195,33 @@
             "<!-- Button - end -->"
          ],
          "description": "Snippet for basic button structure"
+      },
+      "popup": {
+         "prefix": "d-popup",
+         "body": [
+            "<!-- popup -->",
+            "<div class=\"popup-wrapper\" id=\"...\">",
+            "   <div class=\"popup-wrapper__container\">",
+            "                        ",
+            "     <div class=\"popup popup-container\">",
+            "        <div class=\"popup__body\">",
+            "           <div class=\"popup__content\">",
+            "                       ",
+            "              <!-- close popup -->         ",
+            "              <div class=\"popup__close\">",
+            "                 <a href=\"#header\" class=\"popup__close-link close-popup\"></a>",
+            "              </div>",
+            "                       ",
+            "              <!-- popup content -->         ",
+            "                       ",
+            "                       ",
+            "            </div>",
+            "         </div>",
+            "      </div>",
+            "                       ",
+            "   </div>",
+            "</div>"
+         ],
+         "description": "Snippet for basic popup structure"
       }
    }

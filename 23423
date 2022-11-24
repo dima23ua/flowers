@@ -1,0 +1,95 @@
+			<!-- large slider -->
+			<div class="banner-large">
+				<!-- slider-swiper large-banner -->
+				<div class="large-banner-slider swiper-content">
+					<div class="large-banner-slider__wrapper swiper-wrapper">
+						<!--slide-1-->
+						<div class="large-banner-slider__slide swiper-slide">
+							<div class="large-banner">
+								<div class="large-banner__description">
+									<!-- slider title -->
+									<h3 class="large-banner__descr-title">Бесплатная доставка
+										от 5000 руб</h3>
+									<!-- slider promo content -->
+									<div class="large-banner__promo">
+										<div class="large-banner__promo-title">Промокод:</div>
+										<div class="large-banner__promo-body">
+											<div class="large-banner__text">Лавкароз</div>
+											<div class="large-banner__img">
+												<svg class="promo-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#copy"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Картинка -->
+							<img loading="lazy" src="@img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов"
+								title="Доставка цветов">
+						</div>
+					</div>
+					<!--Слайд-2-->
+					<div class="slider__slide swiper-slide">
+						<div class="large-banner-slider__slide swiper-slide">
+							<div class="large-banner">
+								<div class="large-banner__description">
+									<!-- slider title -->
+									<h3 class="large-banner__descr-title">Бесплатная доставка
+										от 5000 руб</h3>
+									<!-- slider promo content -->
+									<div class="large-banner__promo">
+										<div class="large-banner__promo-title">Промокод:</div>
+										<div class="large-banner__promo-body">
+											<div class="large-banner__text">Лавкароз</div>
+											<div class="large-banner__img">
+												<svg class="promo-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#copy"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Картинка -->
+							<img loading="lazy" src="@img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов"
+								title="Доставка цветов">
+						</div>
+					</div>
+					<!--Слайд-3-->
+					<div class="slider__slide swiper-slide">
+						<div class="large-banner-slider__slide swiper-slide">
+							<div class="large-banner">
+								<div class="large-banner__description">
+									<!-- slider title -->
+									<h3 class="large-banner__descr-title">Бесплатная доставка
+										от 5000 руб</h3>
+									<!-- slider promo content -->
+									<div class="large-banner__promo">
+										<div class="large-banner__promo-title">Промокод:</div>
+										<div class="large-banner__promo-body">
+											<div class="large-banner__text">Лавкароз</div>
+											<div class="large-banner__img">
+												<svg class="promo-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#copy"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Картинка -->
+							<img loading="lazy" src="@img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов"
+								title="Доставка цветов">
+						</div>
+					</div>
+				</div>
+				<!-- Кнопки навигации -->
+				<!-- <div class="swiper-buttons"> -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<!-- </div> -->
+				<!-- Пагинация -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- Слайдер - end -->
