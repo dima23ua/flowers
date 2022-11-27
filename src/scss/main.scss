@@ -1,4 +1,4 @@
-//Подключение шрифтов
+// fonts and libs
 @import "fonts";
 @import "libs";
 
@@ -101,22 +101,27 @@ select {
 	--title: #222a46;
 	--line: #d7d9dc;
 	--silver-blue: #353949;
+	--silver-bg: #f2f6f7;
 }
-//Стили компонентов
+
+/* components */
 @import "components";
 
-
-
-
-@import "elements/mobile-bottom-panel"; 
-
+/* index.scss */
 @import "index/main"; 
 @import "index/card-body"; 
+@import "index/path"; 
+@import "index/reviews"; 
+@import "index/news"; 
+@import "index/letter"; 
 
+/* bottom panel for mobile device */
+@import "elements/mobile-bottom-panel"; 
+
+/* popup windows */
 @import "popups/catalog-menu"; 
 @import "popups/mobile-menu"; 
 @import "popups/callback"; 
 
-//Адаптация под мобильніе устойства
+/* responsive */
 @import "adaptive";
-

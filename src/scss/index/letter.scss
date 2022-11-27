@@ -1,0 +1,162 @@
+.letter {
+	position: relative;
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 260px;
+		height: 185px;
+	}
+
+	&:before {
+		left: 0;
+		background: url('../img/flovers-bg-left.svg')no-repeat right top / cover;
+	}
+
+	&:after {
+		background: url('../img/flovers-bg-right.svg')no-repeat left top / cover;
+		right: 0;
+	}
+}
+.letter .section-title {
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}	
+.letter-content {
+	background-color: var(--white);
+	box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.15);
+	border-radius: 10px;
+	position: relative;
+	z-index: 2;
+	padding: 50px 100px;
+
+	// .letter-content__paragraph
+
+	&__paragraph {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 145%;
+		color: var(--silver-blue);
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.branch {
+	// position: relative;
+	overflow: hidden;
+}
+.branch-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// position: relative;
+
+	&__container {
+		padding: 60px 0;
+	}
+
+	// .branch-body__subtitle
+
+	&__subtitle {
+		width: 100%;
+		max-width: 880px;
+
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 145%;
+		color: var(--silver-blue);
+	}
+
+	// .branch-body__list
+
+	&__list {
+
+		padding: 20px;
+	}
+
+	// .branch-body__item
+
+	&__item {
+		position: relative;
+		padding-left: 20px;
+		font-size: 16px;
+		line-height: 145%;
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			width: 5px;
+			height: 5px;
+			border-radius: 20px;
+			background-color: var(--dark);
+		}
+	}
+
+	// .branch-body__picture-content
+
+	&__picture-content {
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-right: -115px;
+	}
+
+		// .branch-body__picture
+
+		&__img {
+			// margin-right: -90px;
+		}
+
+		&__picture {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 130px;
+			min-height: 130px;
+			border-radius: 50%;
+			margin-right: 215px;
+			border: 1px solid #F2F6F7;
+			box-shadow: 0px 15px 30px rgba(34, 42, 70, 0.05);
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translate(0, -50%);
+				width: 330px;
+				height: 516px;
+				background: url('../img/bouquewet-bg-branch.svg')no-repeat center top / cover;
+			}
+			
+			& img {
+				width: 87px;
+				height: 93px;
+			}
+		}
+		// &__after {
+		// 	margin-right: -100px;
+		// }
+}
+
+.foot {
+	height: 200px;
+}

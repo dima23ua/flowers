@@ -38,6 +38,11 @@ const mainSliderSmall = new Swiper('.card-slider', {
 	clickable: true,
 	speed: 1500,
 	slidesPerView: 'auto',
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 });
 
 const mainAppearence = new Swiper('.appearence-slider', {
@@ -59,4 +64,38 @@ const productSlider = new Swiper('.product-slider', {
 	},
 });
 
+const directSlider = new Swiper('.direct-slider', {
+	clickable: true,
+	speed: 1500,
+	slidesPerView: 'auto',
+	spaceBetween: 20,
 
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+const reviewsSlider = new Swiper('.reviews-slider', {
+	clickable: true,
+	speed: 2500,
+	slidesPerView: 'auto',
+	spaceBetween: 20,
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});
+
+const noveltySlider = new Swiper('.novelty-slider', {
+	clickable: true,
+	speed: 1500,
+	slidesPerView: 'auto',
+	spaceBetween: 20,
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+});

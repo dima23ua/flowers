@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/main.min.css?_v=20221125004145">
+	<link rel="stylesheet" href="css/main.min.css?_v=20221127031804">
 	<title>Лавка Роз - Главная страница</title>
 </head>
 
@@ -275,7 +275,7 @@
 														<use xlink:href="img/sprite.svg#location"></use>
 													</svg>
 
-													<div class="callback-submenu__link">ул. Каменец-Подольская 54/5</div>
+													<div class="callback-submenu__link">ул. Каменецкая 54/5</div>
 												</li>
 
 												<!-- callback-submenu item -->
@@ -688,6 +688,7 @@
 		</div>
 
 	</div>
+	
 </header>
 
 		<main class="main">
@@ -712,7 +713,7 @@
 								<div class="large-banner__description">
 									<!-- slider title -->
 									<h3 class="large-banner__descr-title">Бесплатная доставка
-										от 5000 руб</h3>
+										от 1500 грн</h3>
 									<!-- slider promo content -->
 									<div class="large-banner__promo">
 										<div class="large-banner__promo-title">Промокод:</div>
@@ -794,8 +795,16 @@
 					</div>
 					<!-- navigation -->
 
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev">
+						<svg class="swiper-arrow" stroke="currentColor">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
+					</div>
+					<div class="swiper-button-next">
+						<svg class="swiper-arrow" stroke="currentColor">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
+					</div>
 
 					<!-- pagination -->
 					<div class="swiper-pagination"></div>
@@ -810,80 +819,104 @@
 					<h3 class="small-column__title">Букет недели</h3>
 				</div>
 
-				<div class="card-item">
-					<!-- card-product -->
-					<div class="card">
+				<!-- card-product -->
+				<div class="shop-card-block">
+					<!-- Карточка товара -->
+					<div class="shop-card">
+						<article class="shop-card__article">
+							<!-- Карточка товара -->
+							<div class="card">
 
-						<!-- discount -->
-						<div class="discount">
-							<div class="discount__text">-35%</div>
-						</div>
-
-						<!-- fovourite icon -->
-						<div class="card__favourite">
-							<svg class="card-favourite-svg" stroke="currentColor">
-								<use xlink:href="img/sprite.svg#favourite"></use>
-							</svg>
-						</div>
-
-						<!-- slider -->
-						<div class="card-slider swiper-content">
-							<div class="card-slider__wrapper swiper-wrapper">
-								<!--slide-1-->
-								<div class="card-slider__slide swiper-slide">
-									<!-- Картинка -->
-									<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
-								</div>
-								<!--slide-2-->
-								<div class="card-slider__slide swiper-slide">
-
-								</div>
-								<!--slide-3-->
-								<div class="card-slider__slide swiper-slide">
-
-								</div>
-							</div>
-							<!-- navigation -->
-							<div class="swiper-buttons">
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
-							</div>
-							<!-- pagination -->
-							<div class="swiper-pagination"></div>
-						</div>
-						<!-- slider - end -->
-
-
-						<div class="card__information">
-
-							<div class="card__information-block">
-								<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-								<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-							</div>
-
-							<div class="card__sale">
-
-								<!-- price -->
-								<div class="price">
-									<div class="price__price">1 499 ₽</div>
-									<div class="price__old">1 799 ₽</div>
+								<!-- discount -->
+								<div class="discount">
+									<div class="discount__text">-35%</div>
 								</div>
 
-								<!-- card button -->
-								<div class="card-button">
-									<!-- button shopping-cart icon -->
-									<div class="card-button__img">
-										<svg class="card-icon-svg" fill="currentColor">
-											<use xlink:href="img/sprite.svg#shopping-cart"></use>
+								<div class="card-icons">
+									<!-- fovourite icon -->
+									<div class="card-icons__border">
+										<svg class="header-control-svg" stroke="currentColor">
+											<use xlink:href="img/sprite.svg#favourite"></use>
 										</svg>
 									</div>
 
-									<!-- button text -->
-									<div class="card-button__text">В корзину</div>
+									<!-- fovourite icon -->
+									<!-- <div class="card-icons__border">
+											<svg class="header-control-svg" stroke="currentColor">
+												<use xlink:href="img/sprite.svg#eye"></use>
+											</svg>
+										</div> -->
+								</div>
+
+								<!-- slider -->
+								<div class="card-slider swiper-content">
+									<div class="card-slider__wrapper swiper-wrapper">
+										<!--slide-1-->
+										<div class="card-slider__slide swiper-slide">
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+										</div>
+										<!--slide-2-->
+										<div class="card-slider__slide swiper-slide">
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+										</div>
+
+										<!--slide-3-->
+										<div class="card-slider__slide swiper-slide">
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- slider - end -->
+
+								<div class="card__information">
+
+									<div class="card__information-block">
+										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+									</div>
+
+									<div class="card__sale">
+
+										<!-- price -->
+										<div class="price">
+											<div class="price__price">1 499 ₽</div>
+											<div class="price__old">1 799 ₽</div>
+										</div>
+
+										<!-- card button -->
+										<div class="card-button">
+											<!-- button shopping-cart icon -->
+											<div class="card-button__img">
+												<svg class="card-icon-svg" fill="currentColor">
+													<use xlink:href="img/sprite.svg#shopping-cart"></use>
+												</svg>
+											</div>
+
+											<!-- button text -->
+											<div class="card-button__text">В корзину</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
+						</article>
 					</div>
+				</div>
+
+				<!-- navigation -->
+				<div class="swiper-button-prev">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
 				</div>
 
 			</div>
@@ -967,7 +1000,7 @@
 	</div>
 </section>
 			<!-- Слайдер Букеты цветов с доставкой -->
-<section class="cards-body">
+<section class="section cards-body">
 	<div class="container">
 
 		<div class="card-content">
@@ -994,52 +1027,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+											<svg class="header-control-svg" stroke="currentColor">
+												<use xlink:href="img/sprite.svg#eye"></use>
+											</svg>
+										</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Букет 25 роз Нежный Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1048,53 +1100,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-2.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет роз Ред наоми 60 см</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+																<svg class="header-control-svg" stroke="currentColor">
+																	<use xlink:href="img/sprite.svg#eye"></use>
+																</svg>
+															</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1103,53 +1173,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-3.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 5 пионовидных роз Мисти баблс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+														<svg class="header-control-svg" stroke="currentColor">
+															<use xlink:href="img/sprite.svg#eye"></use>
+														</svg>
+													</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1158,53 +1246,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+														<svg class="header-control-svg" stroke="currentColor">
+															<use xlink:href="img/sprite.svg#eye"></use>
+														</svg>
+													</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1213,71 +1319,89 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#eye"></use>
+													</svg>
+												</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
 						</div>
 					</div>
 					<!-- navigation -->
-					<div class="swiper-buttons">
-						<div class="swiper-button-prev">
-							<svg class="swiper-arrow" stroke="currentColor">
-								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
-							</svg>
-						</div>
-						<div class="swiper-button-next">
-							<svg class="swiper-arrow" stroke="currentColor">
-								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
-							</svg>
-						</div>
+
+					<div class="swiper-button-prev">
+						<svg class="swiper-arrow" stroke="currentColor">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
 					</div>
+					<div class="swiper-button-next">
+						<svg class="swiper-arrow" stroke="currentColor">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
+					</div>
+
 				</div>
 				<!-- slider - end -->
 			</div>
@@ -1290,324 +1414,417 @@
 <section class="cards-body">
 	<div class="container">
 
-		<div class="card-content">
+		<!-- <div class="card-content"> -->
 
-			<!-- section title -->
-			<div class="section-title">
+		<!-- section title -->
+		<div class="section-title">
 
-				<!-- title text -->
-				<h2 class="section-title__title">Лучшие предложения</h2>
+			<!-- title text -->
+			<h2 class="section-title__title">Лучшие предложения</h2>
 
-				<!-- title img -->
-				<a href="#" class="section-title__img">
-					<svg class="arrow-title" fill="currentColor">
-						<use xlink:href="img/sprite.svg#arrowRight"></use>
-					</svg>
-				</a>
-			</div>
+			<!-- title img -->
+			<a href="#" class="section-title__img">
+				<svg class="arrow-title" fill="currentColor">
+					<use xlink:href="img/sprite.svg#arrowRight"></use>
+				</svg>
+			</a>
+		</div>
 
-			<div class="cards-swiper">
-				<!-- slider -->
-				<div class="product-slider swiper-content">
-					<div class="product-slider__wrapper swiper-wrapper">
-						<!--slide-1-->
-						<div class="product-slider__slide swiper-slide">
+		<div class="cards-swiper">
+			<!-- slider -->
+			<div class="product-slider swiper-content">
+				<div class="product-slider__wrapper swiper-wrapper">
+					<!--slide-1-->
+					<div class="product-slider__slide swiper-slide">
 
-							<!-- card-product -->
-							<div class="card">
+						<!-- card-product -->
+						<div class="shop-card-block">
+							<!-- Карточка товара -->
+							<div class="shop-card">
+								<article class="shop-card__article">
+									<!-- Карточка товара -->
+									<div class="card">
 
-								<!-- discount -->
-								<div class="discount">-35%</div>
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-3.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
+										<!-- discount -->
+										<div class="discount">
+											<div class="discount__text">-35%</div>
 										</div>
 
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
+										<div class="card-icons">
+											<!-- fovourite icon -->
+											<div class="card-icons__border">
+												<svg class="header-control-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#favourite"></use>
 												</svg>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<!--slide-2-->
-						<div class="product-slider__slide swiper-slide">
-
-							<!-- card-product -->
-							<div class="card">
-
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет роз Ред наоми 60 см</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
+											<!-- fovourite icon -->
+											<!-- <div class="card-icons__border">
+											<svg class="header-control-svg" stroke="currentColor">
+												<use xlink:href="img/sprite.svg#eye"></use>
+											</svg>
+										</div> -->
 										</div>
 
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+										<!-- Картинка -->
+										<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+										<!-- slider - end -->
+
+
+										<div class="card__information">
+
+											<div class="card__information-block">
+												<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+												<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
-										</div>
-									</div>
-								</div>
-							</div>
+											<div class="card__sale">
 
-						</div>
-						<!--slide-3-->
-						<div class="product-slider__slide swiper-slide">
+												<!-- price -->
+												<div class="price">
+													<div class="price__price">1 499 ₽</div>
+													<div class="price__old">1 799 ₽</div>
+												</div>
 
-							<!-- card-product -->
-							<div class="card">
+												<!-- card button -->
+												<div class="card-button">
+													<!-- button shopping-cart icon -->
+													<div class="card-button__img">
+														<svg class="card-icon-svg" fill="currentColor">
+															<use xlink:href="img/sprite.svg#shopping-cart"></use>
+														</svg>
+													</div>
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-4.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 5 пионовидных роз Мисти баблс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+													<!-- button text -->
+													<div class="card-button__text">В корзину</div>
+												</div>
 											</div>
-
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
 										</div>
 									</div>
-								</div>
+
+								</article>
 							</div>
-
 						</div>
-						<!--slide-4-->
-						<div class="product-slider__slide swiper-slide">
 
-							<!-- card-product -->
-							<div class="card">
-
-								<!-- discount -->
-								<div class="discount">Хит</div>
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
-											</div>
-
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<!--slide-5-->
-						<div class="product-slider__slide swiper-slide">
-
-							<!-- card-product -->
-							<div class="card">
-
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
-											</div>
-
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
 					</div>
-					<!-- navigation -->
-					<div class="swiper-buttons">
-						<div class="swiper-button-prev">
-							<svg class="swiper-arrow" stroke="currentColor">
-								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
-							</svg>
+					<!--slide-2-->
+					<div class="product-slider__slide swiper-slide">
+
+						<!-- card-product -->
+						<div class="shop-card-block">
+							<!-- Карточка товара -->
+							<div class="shop-card">
+								<article class="shop-card__article">
+									<!-- Карточка товара -->
+									<div class="card">
+
+										<!-- discount -->
+										<div class="discount">
+											<div class="discount__text">-35%</div>
+										</div>
+
+										<div class="card-icons">
+											<!-- fovourite icon -->
+											<div class="card-icons__border">
+												<svg class="header-control-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#favourite"></use>
+												</svg>
+											</div>
+
+											<!-- fovourite icon -->
+											<!-- <div class="card-icons__border">
+																<svg class="header-control-svg" stroke="currentColor">
+																	<use xlink:href="img/sprite.svg#eye"></use>
+																</svg>
+															</div> -->
+										</div>
+
+										<!-- Картинка -->
+										<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+										<!-- slider - end -->
+
+										<div class="card__information">
+
+											<div class="card__information-block">
+												<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+												<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+											</div>
+
+											<div class="card__sale">
+
+												<!-- price -->
+												<div class="price">
+													<div class="price__price">1 499 ₽</div>
+													<div class="price__old">1 799 ₽</div>
+												</div>
+
+												<!-- card button -->
+												<div class="card-button">
+													<!-- button shopping-cart icon -->
+													<div class="card-button__img">
+														<svg class="card-icon-svg" fill="currentColor">
+															<use xlink:href="img/sprite.svg#shopping-cart"></use>
+														</svg>
+													</div>
+
+													<!-- button text -->
+													<div class="card-button__text">В корзину</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
 						</div>
-						<div class="swiper-button-next">
-							<svg class="swiper-arrow" stroke="currentColor">
-								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
-							</svg>
+
+					</div>
+					<!--slide-3-->
+					<div class="product-slider__slide swiper-slide">
+
+						<!-- card-product -->
+						<div class="shop-card-block">
+							<!-- Карточка товара -->
+							<div class="shop-card">
+								<article class="shop-card__article">
+									<!-- Карточка товара -->
+									<div class="card">
+
+										<!-- discount -->
+										<div class="discount">
+											<div class="discount__text">-35%</div>
+										</div>
+
+										<div class="card-icons">
+											<!-- fovourite icon -->
+											<div class="card-icons__border">
+												<svg class="header-control-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#favourite"></use>
+												</svg>
+											</div>
+
+											<!-- fovourite icon -->
+											<!-- <div class="card-icons__border">
+														<svg class="header-control-svg" stroke="currentColor">
+															<use xlink:href="img/sprite.svg#eye"></use>
+														</svg>
+													</div> -->
+										</div>
+
+										<!-- Картинка -->
+										<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+										<!-- slider - end -->
+
+										<div class="card__information">
+
+											<div class="card__information-block">
+												<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+												<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+											</div>
+
+											<div class="card__sale">
+
+												<!-- price -->
+												<div class="price">
+													<div class="price__price">1 499 ₽</div>
+													<div class="price__old">1 799 ₽</div>
+												</div>
+
+												<!-- card button -->
+												<div class="card-button">
+													<!-- button shopping-cart icon -->
+													<div class="card-button__img">
+														<svg class="card-icon-svg" fill="currentColor">
+															<use xlink:href="img/sprite.svg#shopping-cart"></use>
+														</svg>
+													</div>
+
+													<!-- button text -->
+													<div class="card-button__text">В корзину</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
 						</div>
+
+					</div>
+					<!--slide-4-->
+					<div class="product-slider__slide swiper-slide">
+
+						<!-- card-product -->
+						<div class="shop-card-block">
+							<!-- Карточка товара -->
+							<div class="shop-card">
+								<article class="shop-card__article">
+									<!-- Карточка товара -->
+									<div class="card">
+
+										<!-- discount -->
+										<div class="discount">
+											<div class="discount__text">-35%</div>
+										</div>
+
+										<div class="card-icons">
+											<!-- fovourite icon -->
+											<div class="card-icons__border">
+												<svg class="header-control-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#favourite"></use>
+												</svg>
+											</div>
+
+											<!-- fovourite icon -->
+											<!-- <div class="card-icons__border">
+														<svg class="header-control-svg" stroke="currentColor">
+															<use xlink:href="img/sprite.svg#eye"></use>
+														</svg>
+													</div> -->
+										</div>
+
+										<!-- Картинка -->
+										<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+										<!-- slider - end -->
+
+										<div class="card__information">
+
+											<div class="card__information-block">
+												<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+												<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+											</div>
+
+											<div class="card__sale">
+
+												<!-- price -->
+												<div class="price">
+													<div class="price__price">1 499 ₽</div>
+													<div class="price__old">1 799 ₽</div>
+												</div>
+
+												<!-- card button -->
+												<div class="card-button">
+													<!-- button shopping-cart icon -->
+													<div class="card-button__img">
+														<svg class="card-icon-svg" fill="currentColor">
+															<use xlink:href="img/sprite.svg#shopping-cart"></use>
+														</svg>
+													</div>
+
+													<!-- button text -->
+													<div class="card-button__text">В корзину</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+
+					</div>
+					<!--slide-5-->
+					<div class="product-slider__slide swiper-slide">
+
+						<!-- card-product -->
+						<div class="shop-card-block">
+							<!-- Карточка товара -->
+							<div class="shop-card">
+								<article class="shop-card__article">
+									<!-- Карточка товара -->
+									<div class="card">
+
+										<!-- discount -->
+										<div class="discount">
+											<div class="discount__text">-35%</div>
+										</div>
+
+										<div class="card-icons">
+											<!-- fovourite icon -->
+											<div class="card-icons__border">
+												<svg class="header-control-svg" stroke="currentColor">
+													<use xlink:href="img/sprite.svg#favourite"></use>
+												</svg>
+											</div>
+
+											<!-- fovourite icon -->
+											<!-- <div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#eye"></use>
+													</svg>
+												</div> -->
+										</div>
+
+										<!-- Картинка -->
+										<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+										<!-- slider - end -->
+
+										<div class="card__information">
+
+											<div class="card__information-block">
+												<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+												<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+											</div>
+
+											<div class="card__sale">
+
+												<!-- price -->
+												<div class="price">
+													<div class="price__price">1 499 ₽</div>
+													<div class="price__old">1 799 ₽</div>
+												</div>
+
+												<!-- card button -->
+												<div class="card-button">
+													<!-- button shopping-cart icon -->
+													<div class="card-button__img">
+														<svg class="card-icon-svg" fill="currentColor">
+															<use xlink:href="img/sprite.svg#shopping-cart"></use>
+														</svg>
+													</div>
+
+													<!-- button text -->
+													<div class="card-button__text">В корзину</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+
 					</div>
 				</div>
-				<!-- slider - end -->
+				<!-- navigation -->
+
+				<div class="swiper-button-prev">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+
 			</div>
+			<!-- slider - end -->
 		</div>
+		<!-- </div> -->
 
 	</div>
 </section>
 
 <!-- Слайдер Новинки -->
-<section class="cards-body">
+<section class="section cards-body">
 	<div class="container">
 
 		<div class="card-content">
@@ -1634,52 +1851,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-4.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+											<svg class="header-control-svg" stroke="currentColor">
+												<use xlink:href="img/sprite.svg#eye"></use>
+											</svg>
+										</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1688,53 +1924,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<div class="discount">Хит</div>
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-3.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет роз Ред наоми 60 см</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+																<svg class="header-control-svg" stroke="currentColor">
+																	<use xlink:href="img/sprite.svg#eye"></use>
+																</svg>
+															</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1743,53 +1997,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<div class="discount">Хит</div>
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 5 пионовидных роз Мисти баблс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+														<svg class="header-control-svg" stroke="currentColor">
+															<use xlink:href="img/sprite.svg#eye"></use>
+														</svg>
+													</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1798,53 +2070,71 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">Хит</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-2.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+														<svg class="header-control-svg" stroke="currentColor">
+															<use xlink:href="img/sprite.svg#eye"></use>
+														</svg>
+													</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
@@ -1853,71 +2143,89 @@
 						<div class="product-slider__slide swiper-slide">
 
 							<!-- card-product -->
-							<div class="card">
+							<div class="shop-card-block">
+								<!-- Карточка товара -->
+								<div class="shop-card">
+									<article class="shop-card__article">
+										<!-- Карточка товара -->
+										<div class="card">
 
-								<!-- discount -->
-								<!-- <div class="discount">-35%</div> -->
-
-								<!-- fovourite icon -->
-								<div class="card__favourite">
-									<svg class="card-favourite-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#favourite"></use>
-									</svg>
-								</div>
-
-								<!-- picture -->
-								<div class="card__img">
-									<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Фото Букета из 25 роз"
-										title="Букет из 25 роз">
-								</div>
-
-
-								<div class="card__information">
-
-									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
-										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
-									</div>
-
-									<div class="card__sale">
-
-										<!-- price -->
-										<div class="price">
-											<div class="price__price">1 499 ₽</div>
-											<div class="price__old">1 799 ₽</div>
-										</div>
-
-										<!-- card button -->
-										<div class="card-button">
-											<!-- button shopping-cart icon -->
-											<div class="card-button__img">
-												<svg class="card-icon-svg" fill="currentColor">
-													<use xlink:href="img/sprite.svg#shopping-cart"></use>
-												</svg>
+											<!-- discount -->
+											<div class="discount">
+												<div class="discount__text">-35%</div>
 											</div>
 
-											<!-- button text -->
-											<div class="card-button__text">В корзину</div>
+											<div class="card-icons">
+												<!-- fovourite icon -->
+												<div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#favourite"></use>
+													</svg>
+												</div>
+
+												<!-- fovourite icon -->
+												<!-- <div class="card-icons__border">
+													<svg class="header-control-svg" stroke="currentColor">
+														<use xlink:href="img/sprite.svg#eye"></use>
+													</svg>
+												</div> -->
+											</div>
+
+											<!-- Картинка -->
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+
+
+											<!-- slider - end -->
+
+											<div class="card__information">
+
+												<div class="card__information-block">
+													<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+													<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
+												</div>
+
+												<div class="card__sale">
+
+													<!-- price -->
+													<div class="price">
+														<div class="price__price">1 499 ₽</div>
+														<div class="price__old">1 799 ₽</div>
+													</div>
+
+													<!-- card button -->
+													<div class="card-button">
+														<!-- button shopping-cart icon -->
+														<div class="card-button__img">
+															<svg class="card-icon-svg" fill="currentColor">
+																<use xlink:href="img/sprite.svg#shopping-cart"></use>
+															</svg>
+														</div>
+
+														<!-- button text -->
+														<div class="card-button__text">В корзину</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
+									</article>
 								</div>
 							</div>
 
 						</div>
 					</div>
 					<!-- navigation -->
-					<div class="swiper-buttons">
-						<div class="swiper-button-prev">
-							<svg class="swiper-arrow" stroke="currentColor">
-								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
-							</svg>
-						</div>
-						<div class="swiper-button-next">
-							<svg class="swiper-arrow" stroke="currentColor">
-								<use xlink:href="img/sprite.svg#swiper-arrow"></use>
-							</svg>
-						</div>
+
+					<div class="swiper-button-prev">
+						<svg class="swiper-arrow" stroke="currentColor">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
 					</div>
+					<div class="swiper-button-next">
+						<svg class="swiper-arrow" stroke="currentColor">
+							<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+						</svg>
+					</div>
+
 				</div>
 				<!-- slider - end -->
 			</div>
@@ -1925,13 +2233,961 @@
 
 	</div>
 </section>
+			<section class="section path">
+	<div class="container">
+
+		<!-- section title -->
+		<div class="section-title">
+
+			<!-- title text -->
+			<h2 class="section-title__title">Разделы</h2>
+
+		</div>
+
+		<div class="direct">
+			<!-- slider -->
+			<div class="direct-slider swiper-content">
+				<div class="direct-slider__wrapper swiper-wrapper">
+					<!--slide-1-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<img loading="lazy" src="img/path/img-1.jpg" alt="Раздел цветы поштучно"
+										title="Цветы поштучно">
+								</a>
+							</div>
+							<div class="direct-card__title">
+								<a href="#" class="direct-card__title-link">Цветы поштучно</a>
+								<div class="direct-card__subtitle">от <span>35</span> грн</div>
+							</div>
+						</div>
+					</div>
+					<!--slide-2-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<img loading="lazy" src="img/path/img-2.jpg" alt="Раздел цветы поштучно"
+										title="Цветы поштучно">
+								</a>
+							</div>
+							<div class="direct-card__title">
+								<a href="#" class="direct-card__title-link">Букеты из роз</a>
+								<div class="direct-card__subtitle">от <span>50</span> грн</div>
+							</div>
+						</div>
+					</div>
+					<!--slide-3-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<picture><source srcset="img/path/img-3.webp" type="image/webp"><img loading="lazy" src="img/path/img-3.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
+								</a>
+							</div>
+							<div class="direct-card__title">
+								<a href="#" class="direct-card__title-link">Цветы поштучно</a>
+								<div class="direct-card__subtitle">от <span>120</span> грн</div>
+							</div>
+						</div>
+					</div>
+					<!--slide-4-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<img loading="lazy" src="img/path/img-4.jpg" alt="Композиции из цветов"
+										title="Композиции из цветов">
+								</a>
+							</div>
+							<div class="direct-card__title">
+								<a href="#" class="direct-card__title-link">Композиции из цветов</a>
+								<div class="direct-card__subtitle">от <span>500</span> грн</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- navigation -->
+				<div class="swiper-button-prev">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+
+			</div>
+			<!-- slider - end -->
+		</div>
+
+	</div>
+</section>
+
+<section class="section galery">
+	<div class="container">
+
+		<!-- section title -->
+		<div class="section-title">
+
+			<!-- title text -->
+			<h2 class="section-title__title">Галерея</h2>
+
+		</div>
+
+		<div class="direct">
+			<!-- slider -->
+			<div class="direct-slider swiper-content">
+				<div class="direct-slider__wrapper swiper-wrapper">
+					<!--slide-1-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<img loading="lazy" src="img/galery/gl.jpg" alt="Раздел цветы поштучно"
+										title="Цветы поштучно">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--slide-2-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<img loading="lazy" src="img/galery/gl-1.jpg" alt="Раздел цветы поштучно"
+										title="Цветы поштучно">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--slide-3-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<picture><source srcset="img/galery/gl-2.webp" type="image/webp"><img loading="lazy" src="img/galery/gl-2.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--slide-4-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<img loading="lazy" src="img/galery/gl-3.jpg" alt="Композиции из цветов"
+										title="Композиции из цветов">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--slide-5-->
+					<div class="direct-slider__slide swiper-slide">
+						<div class="direct-card">
+							<div class="direct-card__img">
+								<a href="#" class="direct-card__img-link">
+									<!-- picture -->
+									<img loading="lazy" src="img/galery/gl.jpg" alt="Раздел цветы поштучно"
+										title="Цветы поштучно">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- navigation -->
+				<div class="swiper-button-prev">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+				<!-- slider - end -->
+
+			</div>
+
+		</div>
+
+	</div>
+</section>
+			<section class="section path review-section">
+	<div class="container">
+
+		<!-- section title -->
+		<div class="section-title">
+
+			<!-- title text -->
+			<h2 class="section-title__title">Отзывы наших покупателей</h2>
+
+			<!-- section title button -->
+			<div class="green-button">
+				<div class="green-button__link">Оставить отзыв</div>
+			</div>
+
+
+		</div>
+
+		<!-- reviews-content -->
+		<div class="reviews-content">
+			<!-- slider -->
+			<div class="reviews-slider swiper-content">
+				<div class="reviews-slider__wrapper swiper-wrapper">
+					<!--slide-1-->
+					<div class="reviews-slider__slide swiper-slide">
+
+						<div class="review">
+							<div class="review__body">
+
+								<!-- text content review -->
+								<div class="review__text">
+
+									<!-- stars -->
+									<div class="stars">
+
+									</div>
+
+									<div class="review__title">Мередова Елена Григорьевна</div>
+									<div class="review__review-text">
+										Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм!
+										Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие,
+										стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо
+										Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.
+									</div>
+									<div class="review__descr">
+										<div class="review__descr-title">Отзыв к букету:</div>
+										<span>Розы 80 см</span>
+									</div>
+
+								</div>
+								<div class="review__img">
+									<div class="review__img-body">
+										<!-- picture -->
+										<img loading="lazy" src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами"
+											title="poзы">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--slide-2-->
+					<div class="reviews-slider__slide swiper-slide">
+
+
+						<div class="review">
+							<div class="review__body">
+
+								<!-- text content review -->
+								<div class="review__text">
+
+									<!-- stars -->
+									<div class="stars">
+
+									</div>
+
+									<div class="review__title">Мередова Елена Григорьевна</div>
+									<div class="review__review-text">
+										Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм!
+										Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие,
+										стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо
+										Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.
+									</div>
+									<div class="review__descr">
+										<div class="review__descr-title">Отзыв к букету:</div>
+										<span>Розы 80 см</span>
+									</div>
+
+								</div>
+								<div class="review__img">
+									<div class="review__img-body">
+										<!-- picture -->
+										<img loading="lazy" src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами"
+											title="poзы">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--slide-3-->
+					<div class="reviews-slider__slide swiper-slide">
+
+						<div class="review">
+							<div class="review__body">
+
+								<!-- text content review -->
+								<div class="review__text">
+
+									<!-- stars -->
+									<div class="stars">
+
+									</div>
+
+									<div class="review__title">Мередова Елена Григорьевна</div>
+									<div class="review__review-text">
+										Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм!
+										Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие,
+										стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо
+										Мегацвет24 - вы тот случай, когда точно знаешь куда возвращаться за цветочками.
+									</div>
+									<div class="review__descr">
+										<div class="review__descr-title">Отзыв к букету:</div>
+										<span>Розы 80 см</span>
+									</div>
+
+								</div>
+								<div class="review__img">
+									<div class="review__img-body">
+										<!-- picture -->
+										<img loading="lazy" src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами"
+											title="poзы">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- navigation -->
+				<div class="swiper-button-prev">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+				<div class="swiper-button-next">
+					<svg class="swiper-arrow" stroke="currentColor">
+						<use xlink:href="img/sprite.svg#swiper-arrow"></use>
+					</svg>
+				</div>
+			</div>
+			<!-- slider - end -->
+		</div>
+
+		<!-- button light -->
+		<div class="button-light">
+			<div class="button-light__link">Все отзывы</div>
+		</div>
+
+	</div>
+</section>
+			<section class="section news">
+	<div class="container">
+
+		<!-- section title -->
+		<div class="section-title">
+
+			<!-- title text -->
+			<h2 class="section-title__title">Новости</h2>
+
+			<!-- title img -->
+			<a href="#" class="section-title__img">
+				<div class="section-title__img-link">Все новости</div>
+				<svg class="arrow-title" fill="currentColor">
+					<use xlink:href="img/sprite.svg#arrowRight"></use>
+				</svg>
+			</a>
+		</div>
+
+		<div class="news-content">
+			<!-- slider -->
+			<div class="novelty-slider swiper-content">
+				<div class="novelty-slider__wrapper swiper-wrapper">
+					<!--slide-1-->
+					<div class="novelty-slider__slide swiper-slide">
+
+						<!-- news-1 -->
+						<div class="novelty">
+							<div class="novelty__body">
+
+								<div class="novelty__img">
+									<!-- picture -->
+									<img loading="lazy" src="img/news/news-img-1.jpg" alt="С чем сочетаются тюльпаны"
+										title="С чем сочетаются тюльпаны">
+								</div>
+
+								<div class="novelty__info">
+									<h5 class="novelty__title">С чем сочетаются тюльпаны</h5>
+									<div class="novelty__subtitle">Тюльпаны – нежные цветы, ассоциирующиеся с наступлением
+										весенних дней.</div>
+									<div class="novelty__date">18 декабря 2021</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<!--slide-2-->
+					<div class="novelty-slider__slide swiper-slide">
+
+						<!-- news-2 -->
+						<div class="novelty">
+							<div class="novelty__body">
+
+								<div class="novelty__img">
+									<!-- picture -->
+									<img loading="lazy" src="img/news/news-img-2.jpg" alt="Какие цветы дарят мужчинам"
+										title="Какие цветы дарят мужчинам">
+								</div>
+
+								<div class="novelty__info">
+									<h5 class="novelty__title">Какие цветы дарят мужчинам</h5>
+									<div class="novelty__subtitle">Многие мужчины любят цветы не меньше, чем женщины.</div>
+									<div class="novelty__date">18 декабря 2021</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<!--slide-3-->
+					<div class="novelty-slider__slide swiper-slide">
+
+						<!-- news-3 -->
+						<div class="novelty">
+							<div class="novelty__body">
+
+								<a href="#" class="novelty__img">
+									<!-- picture -->
+									<img loading="lazy" src="img/news/news-img-3.jpg" alt="К чему дарят белые розы"
+										title="К чему дарят белые розы">
+								</a>
+
+								<div class="novelty__info">
+									<h5 class="novelty__title">К чему дарят белые розы</h5>
+									<div class="novelty__subtitle">По какому поводу можно подарить белые розы, и когда это будет
+										неуместно.</div>
+									<div class="novelty__date">18 декабря 2021</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<!-- slider - end -->
+		</div>
+
+	</div>
+</section>
+			<section class="section letter path">
+	<div class="container">
+
+
+		<!-- section title -->
+		<div class="section-title">
+
+			<!-- title text -->
+			<h2 class="section-title__title">Цветы в Хмельницком с доставкой на дом</h2>
+
+		</div>
+
+		<!-- letter-content	 -->
+		<div class="letter-content">
+
+			<!-- letter paragraph -->
+			<p class="letter-content__paragraph">
+				Сделать приятный сюрприз близкому человеку, выразить свою симпатию, любовь или уважение можно из любой
+				точки мира. Порадовать вторую половинку или проявить внимание к жене, маме, сестре, подруге очень легко –
+				воспользуйтесь доставкой цветов в Воронеже и Воронежской области.
+			</p>
+
+			<!-- letter paragraph -->
+			<p class="letter-content__paragraph">
+				Интернет-магазин «Лавка роз» всегда готов предложить большой выбор цветочных композиций на любой вкус и
+				бюджет. Наши
+				флористы и оформители подберут наиболее эффектное сочетание, создадут действительно красивый и
+				оригинальный презент,
+				который обязательно понравится даже самым искушенным и требовательным особам. Курьеры в кратчайшие сроки
+				привезут и
+				вручат подарок, передав всю вашу любовь и заботу. Дарите яркие эмоции и впечатления, счастье и радость
+				дорогим сердцу
+				людям – обращайтесь к нам прямо сейчас.
+			</p>
+
+			<!-- letter paragraph -->
+			<p class="letter-content__paragraph">
+				Мы тщательно следим за свежестью и эстетичностью наших товаров на всех этапах – с момента поставки до
+				непосредственного
+				вручения. Для этого созданы специальные зоны хранения и упаковки, транспортные средства оснащены
+				герметичными боксами.
+				Можете быть уверены в том, что Ваш презент на протяжении длительного периода времени будет радовать своим
+				невероятным
+				ароматом и шикарным внешним видом.
+			</p>
+
+			<!-- letter paragraph -->
+			<p class="letter-content__paragraph">
+				Всегда в наличии продукция из российских теплиц, голландских аукционов и плантаций Эквадора, Колумбии,
+				Кении. В нашем
+				магазине цветов в Воронеже Вы можете купить букеты из десятков сортов роз, тюльпанов, альстромерий,
+				хризантем, пионов и
+				сделать заказ с доставкой на дом – при желании подарок можно дополнить сопутствующим товаром. На выбор
+				покупателей
+				представлено большое разнообразие мягких игрушек, шаров, конфет, сладостей и прочих приятных мелочей, с
+				которыми Ваш
+				презент станет еще более изысканным.
+			</p>
+
+		</div>
+
+	</div>
+</section>
+
+<!-- section "Почему Лавка Роз" -->
+<section class="branch">
+	<div class="container">
+
+		<div class="branch-body">
+
+			<div class="branch-body__container">
+				<!-- section title -->
+				<div class="section-title">
+					<!-- title text -->
+					<h2 class="section-title__title">Почему Лавка Роз</h2>
+				</div>
+
+				<div class="branch-body__subtitle">
+					Мы предоставляем исключительно комфортные условия взаимодействия всем категориям покупателей, в
+					том
+					числе
+					коммерческим и корпоративным:
+				</div>
+
+				<!-- list -->
+				<ul class="branch-body__list">
+					<li class="branch-body__item">Удобные способы оплаты – наличными, банковскими картами, по
+						безналичному
+						расчету.
+					</li>
+					<li class="branch-body__item">
+						Вручение по любому адресу (город + пригород) в течение 2 часов.
+					</li>
+					<li class="branch-body__item">
+						Работаем ежедневно, в том числе в выходные и праздничные дни.
+					</li>
+					<li class="branch-body__item">
+						Пошаговое консультационное и информационное сопровождение.
+					</li>
+					<li class="branch-body__item">
+						Предоставление фото- и видеоотчетов (по желанию).
+					</li>
+				</ul>
+			</div>
+
+			<div class="branch-body__picture-content">
+				<div class="branch-body__img">
+					<div class="branch-body__picture">
+						<!-- picture -->
+						<img loading="lazy" src="img/flovers-bouquet.svg" alt="Иконка букет цветов">
+					</div>
+				</div>
+				<!-- <div class="branch-body__after"> -->
+					<!-- picture -->
+					<!-- <img loading="lazy" src="img/bouquewet-bg-branch.svg" alt="" title="">
+				</div> -->
+			</div>
+		</div>
+
+
+	</div>
+</section>
 
 		</main>
 
-		<footer class="footer">
+		<!-- footer -->
+<footer class="footer">
 	<div class="container">
 
-		
+		<!-- footer grid -->
+		<div class="footer-menu">
+
+			<!-- navigation menu block -->
+			<div class="footer-menu__item">
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Цветы поштучно</h3>
+
+						<!-- arrow -->
+						<div class="arrow">
+							<svg class="arrow-svg" stroke="currentColor">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+
+						<!-- footer menu list -->
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Розы поштучно</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Кустовая роза</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Пионовидная роза</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Хризантемы поштучно</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Альстромерия</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Тюльпаны</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Герберы поштучно</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Лилии поштучно</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Пионы</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Эустома</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Каллы поштучно</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Маттиола</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+
+			<!-- navigation menu block -->
+			<div class="footer-menu__item">
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Розы</h3>
+
+						<!-- arrow -->
+						<div class="arrow">
+							<svg class="arrow-svg" stroke="currentColor">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+
+						<!-- footer menu list -->
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Голландские розы</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Местная роза</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Кустовые розы</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Пионовидные розы</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букет из 101 розы</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+
+			<!-- navigation menu block -->
+			<div class="footer-menu__item">
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Букеты</h3>
+
+						<!-- arrow -->
+						<div class="arrow">
+							<svg class="arrow-svg" stroke="currentColor">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+
+						<!-- footer menu list -->
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Сборные букеты</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букеты из хризантем</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букеты из Альстромерий</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букеты из эустом</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букеты Гипсофилы</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букеты из гербер</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букеты из пионов</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Букеты из тюльпанов</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+
+			<!-- navigation menu block -->
+			<div class="footer-menu__item">
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Композиции</h3>
+
+						<!-- arrow -->
+						<div class="arrow">
+							<svg class="arrow-svg" stroke="currentColor">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+
+						<!-- footer menu list -->
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Ящики с цветами</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Коробки с цветами</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Корзины с цветами</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Подарки</h3>
+
+						<!-- arrow -->
+						<div class="arrow">
+							<svg class="arrow-svg" stroke="currentColor">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+
+						<!-- footer menu list -->
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Мягкие игрушки</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Коробки конфет</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Шары</h3>
+
+						<!-- arrow -->
+						<div class="arrow">
+							<svg class="arrow-svg" stroke="currentColor">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+
+						<!-- footer menu list -->
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Шары в виде цифр</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Фольгированные шары</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Латексные шары</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+
+			<!-- navigation menu block -->
+			<div class="footer-menu__item">
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Информация</h3>
+
+						<!-- arrow -->
+						<div class="arrow">
+							<svg class="arrow-svg" stroke="currentColor">
+								<use xlink:href="img/sprite.svg#arrow"></use>
+							</svg>
+						</div>
+
+						<!-- footer menu list -->
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Доставка</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Оплата</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Отзывы</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Блог</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Гарантии</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Вопрос и ответ</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Корпоративным клиентам</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О компании</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+			</div>
+
+			<!-- navigation menu block -->
+			<div class="footer-menu__item">
+
+				<!-- footer navigation menu -->
+				<div class="footer-navigation">
+					<nav class="footer-nav">
+
+						<!-- footer menu title -->
+						<h3 class="footer-nav__title-content">Наши координаты</h3>
+
+						<div class="footer-nav__contacts-body">
+
+							<div class="footer-nav__item-contacts">
+								<div class="footer-nav__item-title">Служба Доставки</div>
+								<a href="tel:+380965453422" class="footer-nav__item-phone">+38 (096) 545-34-22</a>
+							</div>
+
+							<div class="footer-nav__item-contacts">
+								<div class="footer-nav__item-title">ул. Каменецкая 54/5</div>
+								<a href="tel:+380965453422" class="footer-nav__item-phone">+38 (096) 545-34-22</a>
+							</div>
+
+							<div class="footer-nav__item-contacts">
+								<div class="footer-nav__item-title">ул. Богдана Хмельницкого 12/2</div>
+								<a href="tel:+380961245512" class="footer-nav__item-phone">+38 (096) 124-55-12</a>
+							</div>
+
+							<div class="footer-nav__item-contacts">
+								<div class="footer-nav__item-title">E-mail:</div>
+								<div class="footer-nav__item-email">lavkarozinfo@gmail.com</div>
+							</div>
+						</div>
+
+					</nav>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="footer-bottom">
+			<div class="footer-bottom__body">
+
+				<div class="pay-systems">
+					<div class="pay-systems__title"></div>
+					<ul class="pay-systems__list">
+						<div class="pay-systems__item">
+							<!-- picture -->
+							<picture><source srcset="@img" type="image/webp"><img loading="lazy" src="@img" alt="" title=""></picture>
+						</div>
+						<div class="pay-systems__item">
+							<!-- picture -->
+							<picture><source srcset="@img" type="image/webp"><img loading="lazy" src="@img" alt="" title=""></picture>
+						</div>
+						<div class="pay-systems__item">
+							<!-- picture -->
+							<picture><source srcset="@img" type="image/webp"><img loading="lazy" src="@img" alt="" title=""></picture>
+						</div>
+						<div class="pay-systems__item">
+							<!-- picture -->
+							<picture><source srcset="@img" type="image/webp"><img loading="lazy" src="@img" alt="" title=""></picture>
+						</div>
+						<div class="pay-systems__item">
+							<!-- picture -->
+							<picture><source srcset="@img" type="image/webp"><img loading="lazy" src="@img" alt="" title=""></picture>
+						</div>
+						<div class="pay-systems__item">
+							<!-- picture -->
+							<picture><source srcset="@img" type="image/webp"><img loading="lazy" src="@img" alt="" title=""></picture>
+						</div>
+						<div class="pay-systems__item">
+							<!-- picture -->
+							<picture><source srcset="@img" type="image/webp"><img loading="lazy" src="@img" alt="" title=""></picture>
+						</div>
+					</ul>
+				</div>
+
+			</div>
+		</div>
 
 	</div>
 </footer>
@@ -2108,7 +3364,7 @@
 	</div>
 </div>
 	</div>
-	<script src="js/app.min.js?_v=20221125004145"></script>
+	<script src="js/app.min.js?_v=20221127031804"></script>
 </body>
 
 </html>
