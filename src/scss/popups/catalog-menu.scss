@@ -8,10 +8,10 @@
 	height: 100%;
 	opacity: 0;
 	visibility: hidden;
-	overflow-y: auto;
-	overflow-x: hidden;
-	transition: all 0.5s ease 0s;
-	z-index: 200;
+	overflow: auto;
+	transition: all 0.2s linear;
+	z-index: 10;
+	background-color: var(--white);
 
 	// .catalog-wrapper__container
 
@@ -25,33 +25,12 @@
 	opacity: 1;
 	visibility: visible;
 }
-
-//  .popup
-
-.popup {
-
-	// .popup__body
-
-	&__body {
-	}
-
-	// .popup__content
-
-	&__content {
-	}
-
-	// .popup__close
-
-	&__close {
-	}
-}
-.popup-container {
-}
 .catalog-menu {
 
 	// .catalog-menu__header
 
 	&__header {
+		background-color: var(--white);
 		padding: 20px;
 	}
 

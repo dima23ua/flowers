@@ -24,8 +24,8 @@ const mainSliderLarge = new Swiper('.large-banner-slider', {
 	direction: 'horizontal',
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.large-button-next',
+		prevEl: '.large-button-prev',
 	},
 
 	pagination: {
@@ -40,8 +40,8 @@ const mainSliderSmall = new Swiper('.card-slider', {
 	slidesPerView: 'auto',
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.weekend-button-next',
+		prevEl: '.weekend-button-prev',
 	},
 });
 
@@ -59,8 +59,32 @@ const productSlider = new Swiper('.product-slider', {
 	spaceBetween: 20,
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.product-button-next',
+		prevEl: '.product-button-prev',
+	},
+});
+
+const bestSlider = new Swiper('.best-slider', {
+	clickable: true,
+	speed: 1500,
+	slidesPerView: 'auto',
+	spaceBetween: 20,
+
+	navigation: {
+		nextEl: '.best-button-next',
+		prevEl: '.best-button-prev',
+	},
+});
+
+const newsSlider = new Swiper('.news-slider', {
+	clickable: true,
+	speed: 1500,
+	slidesPerView: 'auto',
+	spaceBetween: 20,
+
+	navigation: {
+		nextEl: '.news-button-next',
+		prevEl: '.news-button-prev',
 	},
 });
 
@@ -71,20 +95,32 @@ const directSlider = new Swiper('.direct-slider', {
 	spaceBetween: 20,
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.direct-button-next',
+		prevEl: '.direct-button-prev',
+	},
+});
+
+const galerySlider = new Swiper('.galery-slider', {
+	clickable: true,
+	speed: 1500,
+	slidesPerView: 'auto',
+	spaceBetween: 20,
+
+	navigation: {
+		nextEl: '.galery-button-next',
+		prevEl: '.galery-button-prev',
 	},
 });
 
 const reviewsSlider = new Swiper('.reviews-slider', {
 	clickable: true,
 	speed: 2500,
-	slidesPerView: 'auto',
+	// slidesPerView: 'auto',
 	spaceBetween: 20,
 
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.reviews-button-next',
+		prevEl: '.reviews-button-prev',
 	},
 });
 
@@ -93,9 +129,4 @@ const noveltySlider = new Swiper('.novelty-slider', {
 	speed: 1500,
 	slidesPerView: 'auto',
 	spaceBetween: 20,
-
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
 });

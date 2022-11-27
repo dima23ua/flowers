@@ -5,9 +5,10 @@
 * {
 	box-sizing: border-box;
 }
-html, 
+html,
 body {
 	width: 100%;
+	height: 100%;
 	margin: 0 auto;
 	padding: 0;
 	box-sizing: border-box;
@@ -23,13 +24,19 @@ html.lock {
 	overflow: hidden;
 }
 .wrapper {
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-width: 100%;
+	min-height: 100%;
 	margin: 0 auto;
 }
 .container {
 	max-width: 1210px;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+.main {
+	flex: 1 1 auto;
 }
 img {
 	width: 100%;

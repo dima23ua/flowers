@@ -9,6 +9,7 @@
 	overflow-x: hidden;
 	transition: all 0.5s ease 0s;
 	z-index: 220;
+	background-color: var(--white);
 
 	// .mobile-menu__container
 
@@ -45,7 +46,7 @@
 	// .mobile-popup__header
 
 	&__body {
-		margin-top: 60px;
+		padding-top: 60px;
 	}
 }
 .mobile-menu.open .mobile-popup__header {
