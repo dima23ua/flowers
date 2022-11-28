@@ -1,0 +1,104 @@
+<!-- popup callback -->
+<div class="signin popup-wrapper" id="signin">
+	<div class="signin-wrapper__container popup-wrapper__container">
+
+		<div class="popup popup-container">
+			<div class="popup__body">
+				<div class="popup__content">
+
+					<div class="popup-header__close">
+						<a href="#header" class="close-popup"></a>
+					</div>
+
+					<div class="popup-header">
+						<div class="tabs">
+
+							<!-- popup-header -->
+
+							<div class="tabs__item popup-header__header-title link-button tab--active" data-tab-name="reg">
+								<h3 class="tabs__title popup-header__title">Регистрация</h3>
+							</div>
+
+							<div class="tabs__item popup-header__header-title link-button" data-tab-name="auth">
+								<h3 class="tabs__title popup-header__title">Вход</h3>
+							</div>
+
+						</div>
+					</div>
+
+
+					<!-- popup-body -->
+					<div class="popup-body">
+
+						<div class="tabs-content">
+
+							<!-- registration form -->
+							<div class="tabs-content__item link-block tab--active reg">
+
+								<!-- Form -->
+								<form action="#" method="post" class="popup-form" id="reg-form">
+
+									<div class="popup-form__label-block">
+										<label for="#regName" class="popup-form__label">Имя и Фамилия</label>
+										<input id="regName" type="text" name="name" class="popup-form__input" placeholder="Имя">
+									</div>
+
+									<div class="popup-form__label-block">
+										<label for="#regPhone" class="popup-form__label">Номер телефона</label>
+										<input id="regPhone" type="tel" name="phone" class="popup-form__input"
+											placeholder="Телефон">
+									</div>
+
+									<div class="button">
+										<button class="button__link">Зарегистрироваться</button>
+									</div>
+
+									<div class="conditions">
+										<p class="conditions__text">Нажимая кнопку "Зарегистрироваться" вы соглашаетесь с
+											условиями <span>обработки персональных данных</span> и <span>публичной
+												офертой.</span>
+										</p>
+									</div>
+								</form>
+								<!-- Form - end -->
+
+							</div>
+
+							<!-- authorization form -->
+							<div class="tabs-content__item link-block auth">
+
+								<!-- Form -->
+								<form action="#" method="post" class="popup-form" id="auth-form">
+
+									<div class="popup-form__label-block">
+										<label for="#authPhone" class="popup-form__label">Номер телефона</label>
+										<input id="authPhone" type="tel" name="phone" class="popup-form__input"
+											placeholder="Телефон">
+									</div>
+
+									<div class="button">
+										<button class="button__link">Получить код</button>
+									</div>
+
+									<div class="conditions">
+										<p class="conditions__auth-text">
+											Напишите свой мобильный телефон в международном формате (+7...). Вам придет смс с кодом
+											для входа
+										</p>
+									</div>
+
+
+								</form>
+								<!-- Form - end -->
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

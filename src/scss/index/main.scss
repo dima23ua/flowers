@@ -137,7 +137,7 @@
 	height: 40px;
 	border-radius: 50%;
 	background-color: var(--white);
-	z-index: 10;
+	z-index: 2;
 	cursor: pointer;
 
 	&:hover .swiper-arrow {
@@ -261,8 +261,21 @@
 	}
 }
 
-.card-slider .swiper-slide img {
-	width: auto;
+.card-slider .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	& img {
+		transition: all .2s linear;
+		transform: scale(1);
+		width: 100%;
+	}
+}
+
+.card:hover .swiper-slide img {
+	transform: scale(1.1);
 }
 .small-column .swiper-button-prev {
 	left: 10px;

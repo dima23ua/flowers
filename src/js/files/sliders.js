@@ -2,19 +2,10 @@ import Swiper, { Navigation, Pagination, EffectFade, Thumbs } from 'swiper';
 Swiper.use([Navigation, Pagination, EffectFade, Thumbs]);
 
 const slider = new Swiper('.header-bottom-nav', {
+
 	clickable: true,
 	speed: 1500,
 	slidesPerView: 'auto',
-
-	breakpoints: {
-		0: {
-			direction: 'vertical',
-		},
-
-		768: {
-			direction: 'horizontal',
-		},
-	},
 });
 
 const mainSliderLarge = new Swiper('.large-banner-slider', {

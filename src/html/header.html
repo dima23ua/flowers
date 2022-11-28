@@ -128,7 +128,7 @@
 							<div class="social-icons">
 
 								<!-- telegram icon -->
-								<a href="https://t.me/dima23ua" class="social-icons__item">
+								<a href="https://t.me/dima23ua" target="_blank" class="social-icons__item">
 									<svg class="social-top-svg" fill="currentColor">
 										<use xlink:href="img/sprite.svg#telegram"></use>
 									</svg>
@@ -144,14 +144,18 @@
 							</div>
 
 							<!-- user cabinet -->
-							<div class="user">
-								<div data-da=".mobile__user,768,0" class="user__image">
-									<svg class="social-top-svg" stroke="currentColor">
-										<use xlink:href="img/sprite.svg#user"></use>
-									</svg>
-								</div>
-								<div class="user__text">Мои заказы</div>
+							<div class="user-content">
+								<a href="#signin" data-da=".mobile__user,768,0" class="popup-link">
+									<div class="user">
+										<div class="user__image">
+											<svg class="social-top-svg" stroke="currentColor">
+												<use xlink:href="img/sprite.svg#user"></use>
+											</svg>
+										</div>
+										<div class="user__text">Мои заказы</div>
 
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -210,7 +214,7 @@
 						</form>
 
 						<!-- callback -->
-						<div data-da=".user,768,0" class="callback">
+						<div data-da=".user-content,768,0" class="callback">
 
 							<!-- phone image -->
 							<div class="icon icon__img">
@@ -411,262 +415,266 @@
 				<!-- header-bottom-menu -->
 				<div data-da=".catalog-menu__catalog-content,768,3" class="header-bottom-menu">
 
+
+
 					<!-- header bottom navigation -->
-					<div class="header-bottom-navigation">
+					<!-- <div class="header-bottom-navigation"> -->
 
-						<!-- discounts header-bottom-menu-->
-						<div class="discounts-content">
+					<!-- Слайдер -->
+					<div class="header-bottom-nav swiper-content">
+						<ul class="header-bottom-nav__list swiper-wrapper">
 
-							<!-- discount image -->
-							<div class="discounts-content__img">
-								<!-- Картинка -->
-								<img loading="lazy" src="@img/discount.svg" alt="Иконка скидки" title="Cкидки">
-							</div>
-							<div class="discounts-content__text">Акции</div>
+							<li class="header-bottom-nav__item swiper-slide">
+								<!-- discounts header-bottom-menu-->
+								<div class="discounts-content">
 
-						</div>
-
-						<!-- Слайдер -->
-						<div class="header-bottom-nav swiper-content">
-							<ul class="header-bottom-nav__list swiper-wrapper">
-
-								<!--Слайд-1-->
-								<li class="header-bottom-nav__item swiper-slide">
-									<a href="#" class="header-bottom-nav__link">Цветы поштучно</a>
-
-									<!-- list arrow -->
-									<div class="header-top-nav__arrow arrow">
-										<svg class="arrow-svg" stroke="currentColor">
-											<use xlink:href="img/sprite.svg#arrow"></use>
-										</svg>
+									<!-- discount image -->
+									<div class="discounts-content__img">
+										<!-- Картинка -->
+										<img loading="lazy" src="@img/discount.svg" alt="Иконка скидки" title="Cкидки">
 									</div>
+									<div class="discounts-content__text">Акции</div>
 
-									<!-- header top submenu -->
-									<div class="header-bottom-submenu">
-										<nav class="header-bottom-submenu__nav">
-											<ul class="header-bottom-submenu__list">
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Тюльпаны</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Розы поштучно</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Кустовая роза</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Пионовидная роза</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Хризантемы поштучно</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Альстромерия</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Герберы поштучно</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Лилии поштучно</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Пионы</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Эустома</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Каллы поштучно</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Маттиола</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
+								</div>
+							</li>
 
-								</li>
+							<!--Слайд-1-->
+							<li class="header-bottom-nav__item swiper-slide">
+								<a href="#" class="header-bottom-nav__link">Цветы поштучно</a>
 
-								<!--Слайд-2-->
-								<li class="header-bottom-nav__item swiper-slide">
+								<!-- list arrow -->
+								<div class="header-top-nav__arrow arrow">
+									<svg class="arrow-svg" stroke="currentColor">
+										<use xlink:href="img/sprite.svg#arrow"></use>
+									</svg>
+								</div>
 
-									<a href="#" class="header-bottom-nav__link">Розы</a>
+								<!-- header top submenu -->
+								<div class="header-bottom-submenu">
+									<nav class="header-bottom-submenu__nav">
+										<ul class="header-bottom-submenu__list">
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Тюльпаны</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Розы поштучно</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Кустовая роза</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Пионовидная роза</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Хризантемы поштучно</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Альстромерия</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Герберы поштучно</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Лилии поштучно</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Пионы</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Эустома</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Каллы поштучно</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Маттиола</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 
-									<!-- list arrow -->
-									<div class="header-top-nav__arrow arrow">
-										<svg class="arrow-svg" stroke="currentColor">
-											<use xlink:href="img/sprite.svg#arrow"></use>
-										</svg>
-									</div>
+							</li>
 
-									<!-- header top submenu -->
-									<div class="header-bottom-submenu">
-										<nav class="header-bottom-submenu__nav">
-											<ul class="header-bottom-submenu__list">
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Голландские розы</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Местная роза</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Кустовые розы</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Пионовидные розы</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букет из 101 розы</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
+							<!--Слайд-2-->
+							<li class="header-bottom-nav__item swiper-slide">
 
-								</li>
+								<a href="#" class="header-bottom-nav__link">Розы</a>
 
-								<!--Слайд-3-->
-								<li class="header-bottom-nav__item swiper-slide">
-									<a href="#" class="header-bottom-nav__link">Букеты</a>
+								<!-- list arrow -->
+								<div class="header-top-nav__arrow arrow">
+									<svg class="arrow-svg" stroke="currentColor">
+										<use xlink:href="img/sprite.svg#arrow"></use>
+									</svg>
+								</div>
 
-									<!-- list arrow -->
-									<div class="header-top-nav__arrow arrow">
-										<svg class="arrow-svg" stroke="currentColor">
-											<use xlink:href="img/sprite.svg#arrow"></use>
-										</svg>
-									</div>
+								<!-- header top submenu -->
+								<div class="header-bottom-submenu">
+									<nav class="header-bottom-submenu__nav">
+										<ul class="header-bottom-submenu__list">
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Голландские розы</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Местная роза</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Кустовые розы</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Пионовидные розы</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букет из 101 розы</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
 
-									<!-- header top submenu -->
-									<div class="header-bottom-submenu">
-										<nav class="header-bottom-submenu__nav">
-											<ul class="header-bottom-submenu__list">
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Сборные букеты</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букеты из тюльпанов и ирисов</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букеты из хризантем</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букеты из Альстромерий</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букеты из эустом</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букеты Гипсофилы</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букеты из гербер</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Букеты из пионов</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</li>
+							</li>
 
-								<!--Слайд-4-->
-								<li class="header-bottom-nav__item swiper-slide">
-									<a href="#" class="header-bottom-nav__link">Композиции</a>
+							<!--Слайд-3-->
+							<li class="header-bottom-nav__item swiper-slide">
+								<a href="#" class="header-bottom-nav__link">Букеты</a>
 
-									<!-- list arrow -->
-									<div class="header-top-nav__arrow arrow">
-										<svg class="arrow-svg" stroke="currentColor">
-											<use xlink:href="img/sprite.svg#arrow"></use>
-										</svg>
-									</div>
+								<!-- list arrow -->
+								<div class="header-top-nav__arrow arrow">
+									<svg class="arrow-svg" stroke="currentColor">
+										<use xlink:href="img/sprite.svg#arrow"></use>
+									</svg>
+								</div>
 
-									<!-- header top submenu -->
-									<div class="header-bottom-submenu">
-										<nav class="header-bottom-submenu__nav">
-											<ul class="header-bottom-submenu__list">
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Ящики с цветами</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Коробки с цветами</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Корзины с цветами</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</li>
+								<!-- header top submenu -->
+								<div class="header-bottom-submenu">
+									<nav class="header-bottom-submenu__nav">
+										<ul class="header-bottom-submenu__list">
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Сборные букеты</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букеты из тюльпанов и ирисов</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букеты из хризантем</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букеты из Альстромерий</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букеты из эустом</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букеты Гипсофилы</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букеты из гербер</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Букеты из пионов</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</li>
 
-								<!--Слайд-5-->
-								<li class="header-bottom-nav__item swiper-slide">
-									<a href="#" class="header-bottom-nav__link">Подарки</a>
+							<!--Слайд-4-->
+							<li class="header-bottom-nav__item swiper-slide">
+								<a href="#" class="header-bottom-nav__link">Композиции</a>
 
-									<!-- list arrow -->
-									<div class="header-top-nav__arrow arrow">
-										<svg class="arrow-svg" stroke="currentColor">
-											<use xlink:href="img/sprite.svg#arrow"></use>
-										</svg>
-									</div>
+								<!-- list arrow -->
+								<div class="header-top-nav__arrow arrow">
+									<svg class="arrow-svg" stroke="currentColor">
+										<use xlink:href="img/sprite.svg#arrow"></use>
+									</svg>
+								</div>
 
-									<!-- header top submenu -->
-									<div class="header-bottom-submenu">
-										<nav class="header-bottom-submenu__nav">
-											<ul class="header-bottom-submenu__list">
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Мягкие игрушки</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Коробки конфет</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</li>
+								<!-- header top submenu -->
+								<div class="header-bottom-submenu">
+									<nav class="header-bottom-submenu__nav">
+										<ul class="header-bottom-submenu__list">
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Ящики с цветами</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Коробки с цветами</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Корзины с цветами</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</li>
 
-								<!--Слайд-6-->
-								<li class="header-bottom-nav__item swiper-slide">
-									<a href="#" class="header-bottom-nav__link">Шары</a>
+							<!--Слайд-5-->
+							<li class="header-bottom-nav__item swiper-slide">
+								<a href="#" class="header-bottom-nav__link">Подарки</a>
 
-									<!-- list arrow -->
-									<div class="header-top-nav__arrow arrow">
-										<svg class="arrow-svg" stroke="currentColor">
-											<use xlink:href="img/sprite.svg#arrow"></use>
-										</svg>
-									</div>
+								<!-- list arrow -->
+								<div class="header-top-nav__arrow arrow">
+									<svg class="arrow-svg" stroke="currentColor">
+										<use xlink:href="img/sprite.svg#arrow"></use>
+									</svg>
+								</div>
 
-									<!-- header top submenu -->
-									<div class="header-bottom-submenu">
-										<nav class="header-bottom-submenu__nav">
-											<ul class="header-bottom-submenu__list">
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Шары в виде цифр</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Фольгированные шары</a>
-												</li>
-												<li class="header-bottom-submenu__item">
-													<a href="#" class="header-bottom-submenu__link">Латексные шары</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</li>
+								<!-- header top submenu -->
+								<div class="header-bottom-submenu">
+									<nav class="header-bottom-submenu__nav">
+										<ul class="header-bottom-submenu__list">
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Мягкие игрушки</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Коробки конфет</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</li>
 
-								<!--Слайд-7-->
-								<li class="header-bottom-nav__item swiper-slide">
-									<a href="#" class="header-bottom-nav__link">Свадебные букеты</a>
-								</li>
+							<!--Слайд-6-->
+							<li class="header-bottom-nav__item swiper-slide">
+								<a href="#" class="header-bottom-nav__link">Шары</a>
 
-								<!--Слайд-8-->
-								<li class="header-bottom-nav__item swiper-slide">
-									<a href="#" class="header-bottom-nav__link">Повод</a>
-								</li>
-							</ul>
+								<!-- list arrow -->
+								<div class="header-top-nav__arrow arrow">
+									<svg class="arrow-svg" stroke="currentColor">
+										<use xlink:href="img/sprite.svg#arrow"></use>
+									</svg>
+								</div>
 
-						</div>
-						<!-- slider swiper- end -->
+								<!-- header top submenu -->
+								<div class="header-bottom-submenu">
+									<nav class="header-bottom-submenu__nav">
+										<ul class="header-bottom-submenu__list">
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Шары в виде цифр</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Фольгированные шары</a>
+											</li>
+											<li class="header-bottom-submenu__item">
+												<a href="#" class="header-bottom-submenu__link">Латексные шары</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</li>
+
+							<!--Слайд-7-->
+							<li class="header-bottom-nav__item swiper-slide">
+								<a href="#" class="header-bottom-nav__link">Свадебные букеты</a>
+							</li>
+
+							<!--Слайд-8-->
+							<li class="header-bottom-nav__item swiper-slide">
+								<a href="#" class="header-bottom-nav__link">Повод</a>
+							</li>
+						</ul>
 
 					</div>
+					<!-- slider swiper- end -->
+
+					<!-- </div> -->
 
 				</div>
 

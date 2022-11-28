@@ -121,6 +121,7 @@ select {
 @import "index/reviews"; 
 @import "index/news"; 
 @import "index/letter"; 
+@import "index/map"; 
 
 /* bottom panel for mobile device */
 @import "elements/mobile-bottom-panel"; 
@@ -129,6 +130,7 @@ select {
 @import "popups/catalog-menu"; 
 @import "popups/mobile-menu"; 
 @import "popups/callback"; 
+@import "popups/signin"; 
 
 /* responsive */
 @import "adaptive";

@@ -208,10 +208,13 @@ body.pc .header-top-nav__item:hover .header-top-subnav {
 }
 
 //====user cabinet
+
+.user-content {
+	margin-left: 30px;
+}
 .user {
 	display: flex;
 	align-items: center;
-	margin-left: 30px;
 	cursor: pointer;
 
 		&__image {
