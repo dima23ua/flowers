@@ -140,7 +140,7 @@
          "prefix": "d-picture",
          "body": [
             "<!-- picture -->",
-            "  <img loading=\"lazy\" src=\"@img\" alt=\"$3\" title=\"$4\">"
+            "  <img src=\"@img\" alt=\"$3\" title=\"$4\">"
          ],
          "description": "Snippet for basic logo structure"
       },
@@ -187,9 +187,9 @@
          "prefix": "d-button",
          "body": [
             "<!-- Button -->",
-            "<div class=\"button\">",
+            "<button aria-label=\"\" class=\"button\">",
             "  <div class=\"button__link\">Кнопка</div>",
-            "</div>",
+            "</button>",
             "<!-- Button - end -->"
          ],
          "description": "Snippet for basic button structure"

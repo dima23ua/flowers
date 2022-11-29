@@ -8,7 +8,7 @@
 	<meta name="description" content="Интернет магазин цветов в г.Хмельницкий, большой асортимент товара, всегда в наличии">
 	<meta name="robots" content="index, catalog">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/main.min.css?_v=20221129004038">
+	<link rel="stylesheet" href="css/main.min.css?_v=20221129040930">
 	<title>Лавка Роз - Главная страница</title>
 </head>
 
@@ -26,8 +26,9 @@
 			<div class="container">
 
 				<div class="header-top-container">
+
 					<!-- menu burger -->
-					<a href="#mobile-menu" class="burger popup-link">
+					<a href="#mobile-menu" aria-label="burger-menu" class="burger popup-link">
 						<div class="burger__menu">
 							<span></span>
 						</div>
@@ -50,9 +51,6 @@
 								<!-- working time text -->
 								<div class="working-time__text">Пн-Сб: 8:00–20:00 Вс: 9:00–20:00</div>
 							</div>
-
-
-
 						</div>
 
 						<!-- header top navigation -->
@@ -79,7 +77,7 @@
 
 									<!-- header top navigation item 4n-->
 									<li class="header-top-nav__item">
-										<a href="#" class="header-top-nav__link">Блог</a>
+										<a href="blog.html" aria-label="page Blog" class="header-top-nav__link">Блог</a>
 									</li>
 
 									<!-- header top navigation item 5n-->
@@ -145,14 +143,14 @@
 							<div class="social-icons">
 
 								<!-- telegram icon -->
-								<a href="https://t.me/dima23ua" target="_blank" class="social-icons__item">
+								<a href="https://t.me/dima23ua" target="_blank" aria-label="contact us by telegram" class="social-icons__item">
 									<svg class="social-top-svg" fill="currentColor">
 										<use xlink:href="img/sprite.svg#telegram"></use>
 									</svg>
 								</a>
 
 								<!-- instagram icon -->
-								<a href="https://instagram.com" target="_blank" class="social-icons__item">
+								<a href="https://instagram.com" target="_blank" aria-label="contact us by instagram" class="social-icons__item">
 									<svg class="social-top-svg" fill="currentColor">
 										<use xlink:href="img/sprite.svg#instagram"></use>
 									</svg>
@@ -162,7 +160,7 @@
 
 							<!-- user cabinet -->
 							<div class="user-content">
-								<a href="#signin" data-da=".mobile__user,768,0" class="popup-link">
+								<a href="#signin" aria-label="signin" data-da=".mobile__user,768,0" class="popup-link">
 									<div class="user">
 										<div class="user__image">
 											<svg class="social-top-svg" stroke="currentColor">
@@ -195,7 +193,7 @@
 							<!-- logo image -->
 							<div class="logo__image">
 								<!-- Картинка -->
-								<img loading="lazy" src="img/logo-img.svg" alt="Логотип сайта" title="Логотип сайта">
+								<img src="img/logo-img.svg" alt="Логотип сайта" title="Логотип сайта">
 							</div>
 
 							<!-- logo text image-->
@@ -223,7 +221,7 @@
 							</div>
 
 							<!-- search button -->
-							<button type="submit" name="button" class="search-form__button">
+							<button type="submit" aria-label="search-button" name="button" class="search-form__button">
 								<svg class="search-icon-svg" stroke="currentColor">
 									<use xlink:href="img/sprite.svg#lupa"></use>
 								</svg>
@@ -235,7 +233,7 @@
 
 							<!-- phone image -->
 							<div class="icon icon__img">
-								<a href="#callback" class="callback__icon-link popup-link">
+								<a href="#callback" aria-label="phone" class="callback__icon-link popup-link">
 									<svg class="header-phone-svg" stroke="currentColor">
 										<use xlink:href="img/sprite.svg#phone"></use>
 									</svg>
@@ -329,7 +327,7 @@
 
 															<!-- WhatsApp -->
 															<div class="social-media__img">
-																<img loading="lazy" src="img/WhatsApp.svg" alt="WhatsApp"
+																<img src="img/WhatsApp.svg" alt="WhatsApp"
 																	title="Напишите нам в WhatsApp">
 															</div>
 														</a>
@@ -341,7 +339,7 @@
 
 															<!-- Telegram -->
 															<div class="social-media__img">
-																<img loading="lazy" src="img/Telegram.svg" alt="Telegram"
+																<img src="img/Telegram.svg" alt="Telegram"
 																	title="Напишите нам в Telegram">
 															</div>
 														</a>
@@ -353,7 +351,7 @@
 
 															<!-- facebook -->
 															<div class="social-media__img">
-																<img loading="lazy" src="img/facebook.svg" alt="Facebook"
+																<img src="img/facebook.svg" alt="Facebook"
 																	title="Напишите нам в Facebook">
 															</div>
 														</a>
@@ -365,7 +363,7 @@
 
 															<!-- Instagram -->
 															<div class="social-media__img">
-																<img loading="lazy" src="img/Instagram.svg" alt="Instagram"
+																<img src="img/Instagram.svg" alt="Instagram"
 																	title="Напишите нам в Instagram">
 															</div>
 														</a>
@@ -448,7 +446,7 @@
 									<!-- discount image -->
 									<div class="discounts-content__img">
 										<!-- Картинка -->
-										<img loading="lazy" src="img/discount.svg" alt="Иконка скидки" title="Cкидки">
+										<img src="img/discount.svg" alt="Иконка скидки" title="Cкидки">
 									</div>
 									<div class="discounts-content__text">Акции</div>
 
@@ -742,8 +740,7 @@
 							</div>
 
 							<!-- picture -->
-							<img loading="lazy" src="img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов"
-								title="Доставка цветов">
+							<picture><source srcset="img/banner/slide-1.webp" type="image/webp"><img src="img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов" title="Доставка цветов"></picture>
 
 						</div>
 						<!--slide-2-->
@@ -771,8 +768,10 @@
 							</div>
 
 							<!-- picture -->
-							<img loading="lazy" src="img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов"
-								title="Доставка цветов">
+							<!-- <img src="img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов"
+								title="Доставка цветов"> -->
+							<!-- picture -->
+							<picture><source srcset="img/banner/slide-1.webp" type="image/webp"><img src="img/banner/slide-1.jpg" alt="Доставка цветов" title="Доставка цветов"></picture>
 
 						</div>
 						<!--slide-3-->
@@ -800,8 +799,7 @@
 							</div>
 
 							<!-- picture -->
-							<img loading="lazy" src="img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов"
-								title="Доставка цветов">
+							<picture><source srcset="img/banner/slide-1.webp" type="image/webp"><img src="img/banner/slide-1.jpg" alt="Слайд-1 Доставка цветов" title="Доставка цветов"></picture>
 
 						</div>
 					</div>
@@ -866,18 +864,18 @@
 										<!--slide-1-->
 										<div class="card-slider__slide swiper-slide">
 											<!-- Картинка -->
-											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
 										</div>
 										<!--slide-2-->
 										<div class="card-slider__slide swiper-slide">
 											<!-- Картинка -->
-											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
 										</div>
 
 										<!--slide-3-->
 										<div class="card-slider__slide swiper-slide">
 											<!-- Картинка -->
-											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img loading="lazy" src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
+											<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="" title=""></picture>
 										</div>
 									</div>
 								</div>
@@ -901,7 +899,7 @@
 										</div>
 
 										<!-- card button -->
-										<div class="card-button">
+										<button aria-label="card-button" class="card-button">
 											<!-- button shopping-cart icon -->
 											<div class="card-button__img">
 												<svg class="card-icon-svg" fill="currentColor">
@@ -911,7 +909,7 @@
 
 											<!-- button text -->
 											<div class="card-button__text">В корзину</div>
-										</div>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -946,7 +944,7 @@
 						<div class="appearence__block">
 							<!-- picture -->
 							<div class="appearence__image">
-								<img loading="lazy" src="img/main-icons/Delivery.svg" alt="Иконка Доставка по городу"
+								<img src="img/main-icons/Delivery.svg" alt="Иконка Доставка по городу"
 									title="Доставка по городу">
 							</div>
 							<div class="appearence__text">Экспресс-доставка от 90 минут</div>
@@ -959,8 +957,7 @@
 						<div class="appearence__block">
 							<!-- picture -->
 							<div class="appearence__image">
-								<img loading="lazy" src="img/main-icons/Discount.svg" alt="Иконка скидки процентов"
-									title="Скидки">
+								<img src="img/main-icons/Discount.svg" alt="Иконка скидки процентов" title="Скидки">
 							</div>
 							<div class="appearence__text">Низкие цены</div>
 						</div>
@@ -972,8 +969,7 @@
 						<div class="appearence__block">
 							<!-- picture -->
 							<div class="appearence__image">
-								<img loading="lazy" src="img/main-icons/Medal.svg" alt="Иконка Медаль"
-									title="Поступление цветов">
+								<img src="img/main-icons/Medal.svg" alt="Иконка Медаль" title="Поступление цветов">
 							</div>
 							<div class="appearence__text">Каждый день поступление
 								свежих цветов</div>
@@ -985,8 +981,7 @@
 						<div class="appearence__block">
 							<!-- picture -->
 							<div class="appearence__image">
-								<img loading="lazy" src="img/main-icons/Bouquet.svg" alt="Иконка Опытные флористы"
-									title="Опытные флористы">
+								<img src="img/main-icons/Bouquet.svg" alt="Иконка Опытные флористы" title="Опытные флористы">
 							</div>
 							<div class="appearence__text">Опытные флористы</div>
 						</div>
@@ -998,8 +993,7 @@
 						<div class="appearence__block">
 							<!-- picture -->
 							<div class="appearence__image">
-								<img loading="lazy" src="img/main-icons/Calendar.svg" alt="График работы"
-									title="График работы">
+								<img src="img/main-icons/Calendar.svg" alt="График работы" title="График работы">
 							</div>
 							<div class="appearence__text">Работаем без выходных</div>
 						</div>
@@ -1070,8 +1064,9 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<!-- picture -->
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
+
 												</a>
 											</div>
 
@@ -1095,7 +1090,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -1105,7 +1100,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -1150,8 +1145,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -1175,7 +1169,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -1185,7 +1179,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -1230,8 +1224,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -1255,7 +1248,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -1265,7 +1258,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -1310,8 +1303,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -1335,7 +1327,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -1345,7 +1337,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -1390,8 +1382,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -1415,7 +1406,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -1425,7 +1416,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -1515,8 +1506,7 @@
 										<!-- Картинка -->
 										<div class="card__img">
 											<a href="#" class="card__img-link">
-												<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-													title="Букет 25 роз">
+												<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 											</a>
 										</div>
 
@@ -1540,7 +1530,7 @@
 												</div>
 
 												<!-- card button -->
-												<div class="card-button">
+												<button aria-label="card-button" class="card-button">
 													<!-- button shopping-cart icon -->
 													<div class="card-button__img">
 														<svg class="card-icon-svg" fill="currentColor">
@@ -1550,7 +1540,7 @@
 
 													<!-- button text -->
 													<div class="card-button__text">В корзину</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1595,8 +1585,7 @@
 										<!-- Картинка -->
 										<div class="card__img">
 											<a href="#" class="card__img-link">
-												<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-													title="Букет 25 роз">
+												<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 											</a>
 										</div>
 
@@ -1620,7 +1609,7 @@
 												</div>
 
 												<!-- card button -->
-												<div class="card-button">
+												<button aria-label="card-button" class="card-button">
 													<!-- button shopping-cart icon -->
 													<div class="card-button__img">
 														<svg class="card-icon-svg" fill="currentColor">
@@ -1630,7 +1619,7 @@
 
 													<!-- button text -->
 													<div class="card-button__text">В корзину</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1675,8 +1664,7 @@
 										<!-- Картинка -->
 										<div class="card__img">
 											<a href="#" class="card__img-link">
-												<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-													title="Букет 25 роз">
+												<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 											</a>
 										</div>
 
@@ -1700,7 +1688,7 @@
 												</div>
 
 												<!-- card button -->
-												<div class="card-button">
+												<button aria-label="card-button" class="card-button">
 													<!-- button shopping-cart icon -->
 													<div class="card-button__img">
 														<svg class="card-icon-svg" fill="currentColor">
@@ -1710,7 +1698,7 @@
 
 													<!-- button text -->
 													<div class="card-button__text">В корзину</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1755,8 +1743,7 @@
 										<!-- Картинка -->
 										<div class="card__img">
 											<a href="#" class="card__img-link">
-												<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-													title="Букет 25 роз">
+												<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 											</a>
 										</div>
 
@@ -1780,7 +1767,7 @@
 												</div>
 
 												<!-- card button -->
-												<div class="card-button">
+												<button aria-label="card-button" class="card-button">
 													<!-- button shopping-cart icon -->
 													<div class="card-button__img">
 														<svg class="card-icon-svg" fill="currentColor">
@@ -1790,7 +1777,7 @@
 
 													<!-- button text -->
 													<div class="card-button__text">В корзину</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1835,8 +1822,7 @@
 										<!-- Картинка -->
 										<div class="card__img">
 											<a href="#" class="card__img-link">
-												<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-													title="Букет 25 роз">
+												<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 											</a>
 										</div>
 
@@ -1860,7 +1846,7 @@
 												</div>
 
 												<!-- card button -->
-												<div class="card-button">
+												<button aria-label="card-button" class="card-button">
 													<!-- button shopping-cart icon -->
 													<div class="card-button__img">
 														<svg class="card-icon-svg" fill="currentColor">
@@ -1870,7 +1856,7 @@
 
 													<!-- button text -->
 													<div class="card-button__text">В корзину</div>
-												</div>
+												</button>
 											</div>
 										</div>
 									</div>
@@ -1959,8 +1945,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -1984,7 +1969,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -1994,7 +1979,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -2039,8 +2024,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -2064,7 +2048,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -2074,7 +2058,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -2119,8 +2103,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -2144,7 +2127,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -2154,7 +2137,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -2199,8 +2182,7 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -2224,7 +2206,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -2234,7 +2216,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -2279,8 +2261,8 @@
 											<!-- Картинка -->
 											<div class="card__img">
 												<a href="#" class="card__img-link">
-													<img loading="lazy" src="img/card-img/card-img-1.jpg" alt="Букет 25 роз"
-														title="Букет 25 роз">
+													<!-- <picture><source srcset="img/galery/gl.webp" type="image/webp"><img src="img/galery/gl.jpg" alt="Каталог букетов" title="Каталог букетов"></picture> -->
+													<picture><source srcset="img/card-img/card-img-1.webp" type="image/webp"><img src="img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз"></picture>
 												</a>
 											</div>
 
@@ -2304,7 +2286,7 @@
 													</div>
 
 													<!-- card button -->
-													<div class="card-button">
+													<button aria-label="card-button" class="card-button">
 														<!-- button shopping-cart icon -->
 														<div class="card-button__img">
 															<svg class="card-icon-svg" fill="currentColor">
@@ -2314,7 +2296,7 @@
 
 														<!-- button text -->
 														<div class="card-button__text">В корзину</div>
-													</div>
+													</button>
 												</div>
 											</div>
 										</div>
@@ -2365,8 +2347,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<img loading="lazy" src="img/path/img-1.jpg" alt="Раздел цветы поштучно"
-										title="Цветы поштучно">
+									<picture><source srcset="img/path/img-1.webp" type="image/webp"><img src="img/path/img-1.jpg" alt="Раздел цветы поштучно" title="Цветы поштучно"></picture>
 								</a>
 							</div>
 							<div class="direct-card__title">
@@ -2381,8 +2362,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<img loading="lazy" src="img/path/img-2.jpg" alt="Раздел цветы поштучно"
-										title="Цветы поштучно">
+									<picture><source srcset="img/path/img-2.webp" type="image/webp"><img src="img/path/img-2.jpg" alt="Раздел цветы поштучно" title="Цветы поштучно"></picture>
 								</a>
 							</div>
 							<div class="direct-card__title">
@@ -2397,7 +2377,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<picture><source srcset="img/path/img-3.webp" type="image/webp"><img loading="lazy" src="img/path/img-3.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
+									<picture><source srcset="img/path/img-3.webp" type="image/webp"><img src="img/path/img-3.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
 								</a>
 							</div>
 							<div class="direct-card__title">
@@ -2412,8 +2392,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<img loading="lazy" src="img/path/img-4.jpg" alt="Композиции из цветов"
-										title="Композиции из цветов">
+									<picture><source srcset="img/path/img-4.webp" type="image/webp"><img src="img/path/img-4.jpg" alt="Композиции из цветов" title="Композиции из цветов"></picture>
 								</a>
 							</div>
 							<div class="direct-card__title">
@@ -2463,8 +2442,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<img loading="lazy" src="img/galery/gl.jpg" alt="Раздел цветы поштучно"
-										title="Цветы поштучно">
+									<picture><source srcset="img/galery/gl.webp" type="image/webp"><img src="img/galery/gl.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
 								</a>
 							</div>
 						</div>
@@ -2475,8 +2453,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<img loading="lazy" src="img/galery/gl-1.jpg" alt="Раздел цветы поштучно"
-										title="Цветы поштучно">
+									<picture><source srcset="img/galery/gl-1.webp" type="image/webp"><img src="img/galery/gl-1.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
 								</a>
 							</div>
 						</div>
@@ -2487,7 +2464,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<picture><source srcset="img/galery/gl-2.webp" type="image/webp"><img loading="lazy" src="img/galery/gl-2.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
+									<picture><source srcset="img/galery/gl-2.webp" type="image/webp"><img src="img/galery/gl-2.jpg" alt="Каталог букетов" title="Каталог букетов"></picture>
 								</a>
 							</div>
 						</div>
@@ -2498,8 +2475,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<img loading="lazy" src="img/galery/gl-3.jpg" alt="Композиции из цветов"
-										title="Композиции из цветов">
+									<picture><source srcset="img/galery/gl-3.webp" type="image/webp"><img src="img/galery/gl-3.jpg" alt="Композиции из цветов" title="Композиции из цветов"></picture>
 								</a>
 							</div>
 						</div>
@@ -2510,8 +2486,7 @@
 							<div class="direct-card__img">
 								<a href="#" class="direct-card__img-link">
 									<!-- picture -->
-									<img loading="lazy" src="img/galery/gl.jpg" alt="Раздел цветы поштучно"
-										title="Цветы поштучно">
+									<picture><source srcset="img/galery/gl.webp" type="image/webp"><img src="img/galery/gl.jpg" alt="Раздел цветы поштучно" title="Цветы поштучно"></picture>
 								</a>
 							</div>
 						</div>
@@ -2546,9 +2521,9 @@
 			<h2 class="section-title__title">Отзывы наших покупателей</h2>
 
 			<!-- section title button -->
-			<div class="green-button">
+			<button aria-label="green-button" class="green-button">
 				<div class="green-button__link">Оставить отзыв</div>
-			</div>
+			</button>
 
 
 		</div>
@@ -2605,8 +2580,7 @@
 								<div class="review__img">
 									<div class="review__img-body">
 										<!-- picture -->
-										<img loading="lazy" src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами"
-											title="poзы">
+										<picture><source srcset="img/reviews/card-img-2.webp" type="image/webp"><img src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами" title="poзы"></picture>
 									</div>
 								</div>
 							</div>
@@ -2661,8 +2635,7 @@
 								<div class="review__img">
 									<div class="review__img-body">
 										<!-- picture -->
-										<img loading="lazy" src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами"
-											title="poзы">
+										<picture><source srcset="img/reviews/card-img-2.webp" type="image/webp"><img src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами" title="poзы"></picture>
 									</div>
 								</div>
 							</div>
@@ -2715,9 +2688,9 @@
 								</div>
 								<div class="review__img">
 									<div class="review__img-body">
+
 										<!-- picture -->
-										<img loading="lazy" src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами"
-											title="poзы">
+										<picture><source srcset="img/reviews/card-img-2.webp" type="image/webp"><img src="img/reviews/card-img-2.jpg" alt="Картинка Букет с розами" title="poзы"></picture>
 									</div>
 								</div>
 							</div>
@@ -2741,9 +2714,9 @@
 		</div>
 
 		<!-- button light -->
-		<div class="button-light">
+		<button aria-label="light-button" class="button-light">
 			<div class="button-light__link">Все отзывы</div>
-		</div>
+		</button>
 
 	</div>
 </section>
@@ -2778,13 +2751,15 @@
 
 								<a href="#" class="novelty__img">
 									<!-- picture -->
-									<img loading="lazy" src="img/news/news-img-1.jpg" alt="С чем сочетаются тюльпаны"
+
+									<img src="img/news/news-img-1.jpg" alt="С чем сочетаются тюльпаны"
 										title="С чем сочетаются тюльпаны">
+
 								</a>
 
 								<div class="novelty__info">
 									<a href="#" class="novelty__link">
-										<h5 class="novelty__title">С чем сочетаются тюльпаны</h5>
+										<h4 class="novelty__title">С чем сочетаются тюльпаны</h4>
 									</a>
 									<div class="novelty__subtitle">Тюльпаны – нежные цветы, ассоциирующиеся с наступлением
 										весенних дней.</div>
@@ -2804,13 +2779,13 @@
 
 								<a href="#" class="novelty__img">
 									<!-- picture -->
-									<img loading="lazy" src="img/news/news-img-2.jpg" alt="Какие цветы дарят мужчинам"
+									<img src="img/news/news-img-2.jpg" alt="Какие цветы дарят мужчинам"
 										title="Какие цветы дарят мужчинам">
 								</a>
 
 								<div class="novelty__info">
 									<a href="#" class="novelty__link">
-										<h5 class="novelty__title">Какие цветы дарят мужчинам</h5>
+										<h4 class="novelty__title">Какие цветы дарят мужчинам</h4>
 									</a>
 									<div class="novelty__subtitle">Многие мужчины любят цветы не меньше, чем женщины.</div>
 									<div class="novelty__date">18 декабря 2021</div>
@@ -2829,13 +2804,13 @@
 
 								<a href="#" class="novelty__img">
 									<!-- picture -->
-									<img loading="lazy" src="img/news/news-img-3.jpg" alt="К чему дарят белые розы"
+									<img src="img/news/news-img-3.jpg" alt="К чему дарят белые розы"
 										title="К чему дарят белые розы">
 								</a>
 
 								<div class="novelty__info">
 									<a href="#" class="novelty__link">
-										<h5 class="novelty__title">К чему дарят белые розы</h5>
+										<h4 class="novelty__title">К чему дарят белые розы</h4>
 									</a>
 									<div class="novelty__subtitle">По какому поводу можно подарить белые розы, и когда это будет
 										неуместно.</div>
@@ -2963,13 +2938,10 @@
 				<div class="branch-body__img">
 					<div class="branch-body__picture">
 						<!-- picture -->
-						<img loading="lazy" src="img/flovers-bouquet.svg" alt="Иконка букет цветов">
+						<img src="img/flovers-bouquet.svg" alt="Иконка букет цветов">
 					</div>
 				</div>
-				<!-- <div class="branch-body__after"> -->
-					<!-- picture -->
-					<!-- <img loading="lazy" src="img/bouquewet-bg-branch.svg" alt="" title="">
-				</div> -->
+				
 			</div>
 		</div>
 
@@ -3259,7 +3231,7 @@
 								<a href="#" class="footer-nav__link">Отзывы</a>
 							</li>
 							<li class="footer-nav__item">
-								<a href="#" class="footer-nav__link">Блог</a>
+								<a href="blog.html" class="footer-nav__link">Блог</a>
 							</li>
 							<li class="footer-nav__item">
 								<a href="#" class="footer-nav__link">Гарантии</a>
@@ -3330,7 +3302,7 @@
 
 					<!-- copyright -->
 					<div class="copyright">
-						<h6 class="copyright__title">&#xa9; 2014 – 2022. Интернет-магазин «Лавка Роз»</h6>
+						<h5 class="copyright__title">&#xa9; 2014 – 2022. Интернет-магазин «Лавка Роз»</h5>
 					</div>
 
 					<!-- pay systems -->
@@ -3339,43 +3311,43 @@
 							<div class="pay-systems__item">
 								<!-- picture -->
 								<a href="#" class="pay-systems__link">
-									<img loading="lazy" src="img/pay/Frame.svg" alt="" title="">
+									<img src="img/pay/Frame.svg" alt="" title="">
 								</a>
 							</div>
 							<div class="pay-systems__item">
 								<!-- picture -->
 								<a href="#" class="pay-systems__link">
-									<img loading="lazy" src="img/pay/Frame-1.svg" alt="" title="">
+									<img src="img/pay/Frame-1.svg" alt="" title="">
 								</a>
 							</div>
 							<div class="pay-systems__item">
 								<!-- picture -->
 								<a href="#" class="pay-systems__link">
-									<img loading="lazy" src="img/pay/Frame-2.svg" alt="" title="">
+									<img src="img/pay/Frame-2.svg" alt="" title="">
 								</a>
 							</div>
 							<div class="pay-systems__item">
 								<!-- picture -->
 								<a href="#" class="pay-systems__link">
-									<img loading="lazy" src="img/pay/Frame-3.svg" alt="" title="">
+									<img src="img/pay/Frame-3.svg" alt="" title="">
 								</a>
 							</div>
 							<div class="pay-systems__item">
 								<!-- picture -->
 								<a href="#" class="pay-systems__link">
-									<img loading="lazy" src="img/pay/Frame-4.svg" alt="" title="">
+									<img src="img/pay/Frame-4.svg" alt="" title="">
 								</a>
 							</div>
 							<div class="pay-systems__item">
 								<!-- picture -->
 								<a href="#" class="pay-systems__link">
-									<img loading="lazy" src="img/pay/Frame-5.svg" alt="" title="">
+									<img src="img/pay/Frame-5.svg" alt="" title="">
 								</a>
 							</div>
 							<div class="pay-systems__item">
 								<!-- picture -->
 								<a href="#" class="pay-systems__link">
-									<img loading="lazy" src="img/pay/Frame-6.svg" alt="" title="">
+									<img src="img/pay/Frame-6.svg" alt="" title="">
 								</a>
 							</div>
 						</ul>
@@ -3392,21 +3364,21 @@
 
 					<!-- social icons -->
 					<div class="social__content">
-						<div class="social__item fb">
+						<button aria-label="facebook" class="social__item fb">
 							<svg class="footer-social-svg" fill="currentColor">
 								<use xlink:href="img/sprite.svg#footer-facebook"></use>
 							</svg>
-						</div>
-						<div class="social__item inst">
+						</button>
+						<button aria-label="instagram" class="social__item inst">
 							<svg class="footer-social-svg" fill="currentColor">
 								<use xlink:href="img/sprite.svg#footer-instagram"></use>
 							</svg>
-						</div>
-						<div class="social__item youtube">
+						</button>
+						<button aria-label="youtube" class="social__item youtube">
 							<svg class="footer-social-svg" fill="currentColor">
 								<use xlink:href="img/sprite.svg#footer-youtube"></use>
 							</svg>
-						</div>
+						</button>
 					</div>
 				</div>
 
@@ -3494,7 +3466,7 @@
 								</div>
 
 								<!-- search button -->
-								<button type="submit" name="button" class="search-form__button">
+								<button aria-label="search catalog" type="submit" name="button" class="search-form__button">
 									<svg class="search-icon-svg" stroke="currentColor">
 										<use xlink:href="img/sprite.svg#lupa"></use>
 									</svg>
@@ -3569,9 +3541,9 @@
 								<input id="callbackPhone" type="tel" name="phone" class="popup-form__input" placeholder="Телефон">
 							</div>
 
-							<div class="button">
+							<button aria-label="callback" class="button">
 								<button class="button__link">Заказать звонок</button>
-							</div>
+							</button>
 
 							<!-- form checkbox -->
 							<label class="checkbox">
@@ -3639,9 +3611,9 @@
 											placeholder="Телефон">
 									</div>
 
-									<div class="button">
-										<button class="button__link">Зарегистрироваться</button>
-									</div>
+									<button aria-label="registration" class="button">
+										<div class="button__link">Зарегистрироваться</div>
+									</button>
 
 									<div class="conditions">
 										<p class="conditions__text">Нажимая кнопку "Зарегистрироваться" вы соглашаетесь с
@@ -3666,9 +3638,9 @@
 											placeholder="Телефон">
 									</div>
 
-									<div class="button">
-										<button class="button__link">Получить код</button>
-									</div>
+									<button aria-label="authorization" class="button">
+										<div class="button__link">Получить код</div>
+									</button>
 
 									<div class="conditions">
 										<p class="conditions__auth-text">
@@ -3694,7 +3666,7 @@
 </div>
 
 	</div>
-	<script src="js/app.min.js?_v=20221129004038"></script>
+	<script src="js/app.min.js?_v=20221129040930"></script>
 </body>
 
 </html>

@@ -42,6 +42,8 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
-    "google-maps": "^4.3.3"
+    "browserslist": "latest",
+    "caniuse-lite": "latest",
+    "google-maps": "latest"
   }
 }
