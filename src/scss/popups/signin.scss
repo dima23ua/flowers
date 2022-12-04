@@ -14,6 +14,12 @@
 			background-color: transparent;
 			border-radius: 5px;
 			cursor: pointer;
+			transition: all .2s linear;
+			border: 1px solid transparent;
+
+			&:hover {
+				border: 1px solid #fff;
+			}
 		}
 
 		&__item.tab--active {
@@ -25,13 +31,14 @@
 			padding: 13px;
 		}
 }
-.popup-body {
-}
+
 .tabs-content {
+
 
 		// .tabs-content__item
 
 		&__item {
+			
 		}
 }
 .link-block {
@@ -39,8 +46,6 @@
 }
 .link-block.tab--active {
 	display: block;
-}
-.reg {
 }
 
 .conditions {
@@ -70,6 +75,4 @@
 			color: var(--gray);
 			font-size: 12px;
 		}
-}
-.auth {
 }

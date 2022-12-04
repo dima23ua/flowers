@@ -1,7 +1,6 @@
 .green-button {
 	display: flex;
 	justify-content: center;
-	white-space: nowrap;
 
 	&:hover .green-button__link {
 		background-color: var(--green);
@@ -120,10 +119,6 @@
 		}
 
 		&__img-body {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
 			width: 190px;
 			height: 190px;
 			border-radius: 50%;

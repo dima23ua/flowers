@@ -22,6 +22,17 @@
          ],
          "description": "Snippet for burger btn"
       },
+      "button burger": {
+         "scope": "html",
+         "prefix": "d-butburg",
+         "body": [
+            "<!-- Меню Бургер -->",
+            "<button class=\"burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\"  data-burger>",
+            "  <span class=\"burger__line\"></span>",
+            "</button>"
+         ],
+         "description": "Snippet for burger btn"
+      },
       "checkbox": {
          "scope": "html",
          "prefix": "d-checkbox",

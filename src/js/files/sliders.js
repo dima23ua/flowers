@@ -1,18 +1,25 @@
 import Swiper, { Navigation, Pagination, EffectFade, Thumbs } from 'swiper';
 Swiper.use([Navigation, Pagination, EffectFade, Thumbs]);
 
-const slider = new Swiper('.header-bottom-nav', {
 
-	clickable: true,
-	speed: 1500,
-	slidesPerView: 'auto',
-});
+/* main slider */
+document.addEventListener('DOMContentLoaded', () => {
+	const width = window.innerWidth
+	if (width > 768) {
+
+		const slider = new Swiper('.header-bottom-nav', {
+			clickable: true,
+			speed: 1500,
+			slidesPerView: 'auto',
+			// spaceBetween: 30,
+		});
+	}
+})
 
 const mainSliderLarge = new Swiper('.large-banner-slider', {
 	clickable: true,
 	speed: 1500,
 	slidesPerView: 'auto',
-	direction: 'horizontal',
 
 	navigation: {
 		nextEl: '.large-button-next',
