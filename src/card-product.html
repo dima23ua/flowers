@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Лавка Роз - Карточка товара"
+})
+
+<body>
+	<div class="wrapper">
+
+		@@include('html/header.html',{})
+
+
+		<main class="main">
+
+			@@include('html/card-product/product.html',{})
+			@@include('html/card-product/review.html',{})
+			@@include('html/card-product/card-products.html',{})
+
+		</main>
+
+		@@include('html/footer.html',{})
+
+		@@include('html/elements/mobile_bottom_panel.html',{})
+
+		<!-- popups -->
+		@@include('html/popups/catalog.html',{})
+		@@include('html/popups/mobile-menu.html',{})
+		@@include('html/popups/callback.html',{})
+		@@include('html/popups/signin.html',{})
+
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

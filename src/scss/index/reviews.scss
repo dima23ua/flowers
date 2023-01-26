@@ -1,3 +1,4 @@
+/*button green*/
 .green-button {
 	display: flex;
 	justify-content: center;
@@ -24,16 +25,49 @@
 		cursor: pointer;
 	}
 }
+
+/* button light */
+.button-light {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	// .button-light__link
+
+	&__link {
+		position: relative;
+		z-index: 1;
+		background-color: var(--white);
+		box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+		padding: 13px 50px;
+		border-radius: 5px;
+		margin-top: 30px;
+
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 140%;
+		color: var(--green);
+		border: 1px solid var(--white);
+		transition: all .2s linear;
+		cursor: pointer;
+
+		&:hover {
+			border: 1px solid var(--green);
+		}
+	}
+}
+
 .reviews-content {
 	position: relative;
-	border-radius: 10px;
-	box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
+
+	// overflow: hidden;
 }
 .reviews-slider {
 	overflow: hidden;
-	background-color: var(--white);
 	border-radius: 10px;
-
+	border: 1px solid var(--icon-border);
+	box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
 		// .reviews-slider__slide
 
 		&__slide {
@@ -41,16 +75,17 @@
 		}
 }
 .review {
+	overflow: hidden;
+	border-radius: 10px;
 	padding: 45px 40px 40px 50px;
+	background-color: var(--white);
 
 		// .review__body
 
 		&__body {
 			display: flex;
-			
 			justify-content: space-between;
 			align-items: center;
-
 		}
 
 		// .review__text
@@ -140,37 +175,6 @@
 .reviews-slider .reviews-button-next {
 	right: -20px;
 }
-/* button light */
-.button-light {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	// .button-light__link
-
-	&__link {
-		position: relative;
-		z-index: 1;
-		background-color: var(--white);
-		box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.08);
-		padding: 13px 50px;
-		border-radius: 5px;
-		margin-top: 30px;
-
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 140%;
-		color: var(--green);
-		border: 1px solid var(--white);
-		transition: all .2s linear;
-		cursor: pointer;
-
-		&:hover {
-			border: 1px solid var(--green);
-		}
-	}
-}
 
 /* stars-rating */
 .stars {
@@ -243,3 +247,19 @@
 	}
 }
 
+/*review-page-content*/
+.review-page-content .review {
+		border: 1px solid #d0d2d7;
+		box-shadow: 0px 4px 15px transparent;
+		transition: all .2s linear;
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover {
+			border: 1px solid transparent;
+			box-shadow: 0px 4px 15px rgba(34, 42, 70, 0.15);
+		}
+}

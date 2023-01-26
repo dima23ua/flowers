@@ -24,13 +24,16 @@ html.lock {
 	overflow: hidden;
 }
 .wrapper {
+	display: flex;
+	flex-direction: column;
+
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	overflow-Y: auto;
+	overflow-y: auto;
 	overflow-x: hidden;
 }
 .container {
@@ -107,7 +110,7 @@ select {
 	--white: #fff;
 	--light-blue: #1b1c40;
 	--red: #e31059;
-	--icon-border: #e2e4e8;
+	--icon-border: #e2e4eb;
 	--title: #222a46;
 	--line: #d7d9dc;
 	--silver-blue: #353949;
@@ -128,6 +131,9 @@ select {
 
 /* blog.style */
 @import "blog/blog-content";
+
+/* card-product info.style */
+@import "card-product/product_info";
 
 /* bottom panel for mobile device */
 @import "elements/mobile-bottom-panel"; 

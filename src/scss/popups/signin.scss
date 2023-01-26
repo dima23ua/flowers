@@ -34,7 +34,6 @@
 
 .tabs-content {
 
-
 		// .tabs-content__item
 
 		&__item {
@@ -62,10 +61,10 @@
 			line-height: 145%;
 			color: var(--gray);
 			text-align: center;
+		}
 
-			& span {
-				color: var(--green);
-			}
+		&__link {
+			color: var(--green);
 		}
 
 		&__auth-text {

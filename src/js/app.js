@@ -8,3 +8,5 @@ import { } from './files/popup.js';
 import { } from './files/map.js';
 import { } from './files/tabs.js';
 import { } from './files/unheader.js';
+import { } from './files/forms.js';
+import { } from './files/radio.js';

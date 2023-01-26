@@ -14,20 +14,7 @@
          "prefix": "d-burger",
          "body": [
             "<!-- Меню Бургер -->",
-            "<div class=\"burger\">",
-            "  <div class=\"burger__menu\">",
-            "     <span></span>",
-            "</div>",
-            "</div>"
-         ],
-         "description": "Snippet for burger btn"
-      },
-      "button burger": {
-         "scope": "html",
-         "prefix": "d-butburg",
-         "body": [
-            "<!-- Меню Бургер -->",
-            "<button class=\"burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\"  data-burger>",
+            "<button class=\"burger\" aria-label=\"Открыть меню\" aria-expanded=\"false\">",
             "  <span class=\"burger__line\"></span>",
             "</button>"
          ],
@@ -87,13 +74,18 @@
          "body": [
             "<!-- Form -->",
             "<form action=\"#\" method=\"post\" class=\"form\" id=\"form\">",
+            "    ",
+            "   <!-- form input --> ",
             "   <div class=\"form__label-block\">",
             "      <label for=\"#formName\" class=\"form__label\"></label>",
             "      <input id=\"formName\" type=\"text\" name=\"name\" class=\"form__input\" placeholder=\"Имя\">",
             "   </div>",
-            "   <div class=\"button\">",
-            "     <button class=\"button__link\">Отправить</button>",
-            "   </div>                       ",
+            "    ",
+            "    <!-- button -->",
+            "      <div class=\"button\">",
+            "         <button aria-label=\"\" type=\"\" class=\"button__link\">Кнопка</button>",
+            "      </div>",
+            "    <!-- button - end -->",
             "</form>",
             "<!-- Form - end -->"
          ],
@@ -128,25 +120,6 @@
          ],
          "description": "Snippet for basic swiper structure"
       },
-      "graph modal Btn": {
-         "prefix": "d-btn",
-         "body": [
-            "<button class=\"btn-reset $1\" data-graph-path=\"$2\">$3</button>"
-         ],
-         "description": "Snippet for graph-modal btn"
-      },
-      "graph modal Structure": {
-         "prefix": "d-modal",
-         "body": [
-            "<div class=\"modal\">",
-            "  <div class=\"modal__container\" role=\"dialog\" aria-modal=\"true\" data-graph-target=\"$1\">",
-            "    <button class=\"btn-reset modal__close\" aria-label=\"Закрыть модальное окно\"></button>",
-            "    <div class=\"modal__content\">$2</div>",
-            "  </div>",
-            "</div>"
-         ],
-         "description": "Snippet for graph-modal basic structure"
-      },
       "picture": {
          "prefix": "d-picture",
          "body": [
@@ -176,7 +149,7 @@
          ],
          "description": "Snippet for tooltip"
       },
-      "tabs html sctructure": {
+      "tabs": {
          "prefix": "d-tabs",
          "body": [
             "<div class=\"tabs\" data-tabs=\"$1\">",
@@ -194,13 +167,13 @@
          ],
          "description": "Snippet for basic tabs structure"
       },
-      "button html sctructure": {
+      "button": {
          "prefix": "d-button",
          "body": [
             "<!-- Button -->",
-            "<button aria-label=\"\" class=\"button\">",
-            "  <div class=\"button__link\">Кнопка</div>",
-            "</button>",
+            "<div class=\"button\">",
+            "  <button aria-label=\"\" type=\"\" class=\"button__link\">Кнопка</button>",
+            "</div>",
             "<!-- Button - end -->"
          ],
          "description": "Snippet for basic button structure"
@@ -232,5 +205,15 @@
             "</div>"
          ],
          "description": "Snippet for basic popup structure"
+      },
+      "radio-buttons": {
+         "prefix": "d-radio",
+         "body": [
+            "<!-- radio button -->",
+            "<div class=\"radio-button\">",
+            "   <input type=\"radio\" class=\"radio-button__input\"  id=\"\" name=\"\" value=\"\">",
+            "   <label for=\"\" class=\"radio-button__label\">...</label>",
+            "</div>"
+         ]
       }
    }

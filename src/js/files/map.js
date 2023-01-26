@@ -17,7 +17,7 @@ loader.load().then(function (google) {
 		position: { lat: 49.424792731696904, lng: 26.980215911182416 },
 		map: map,
 		title: 'магазин "Лавка Роз"',
-		icon: '../img/location-map.svg'
+		icon: 'img/location-map.svg'
 	});
 
 	let info = new google.maps.InfoWindow({

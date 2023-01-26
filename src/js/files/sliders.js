@@ -1,20 +1,30 @@
-import Swiper, { Navigation, Pagination, EffectFade, Thumbs } from 'swiper';
-Swiper.use([Navigation, Pagination, EffectFade, Thumbs]);
+import Swiper, { Navigation, Pagination, Thumbs } from 'swiper';
+Swiper.use([Navigation, Pagination, Thumbs]);
 
 
 /* main slider */
 document.addEventListener('DOMContentLoaded', () => {
 	const width = window.innerWidth
-	if (width > 768) {
+	if (width <= 768) {
 
 		const slider = new Swiper('.header-bottom-nav', {
-			clickable: true,
 			speed: 1500,
 			slidesPerView: 'auto',
-			// spaceBetween: 30,
 		});
 	}
-})
+});
+
+const cardImgSlider = new Swiper('.card-img-slider', {
+	clickable: true,
+	speed: 1500,
+	slidesPerView: 'auto',
+	allowTouchMove: false,
+
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+});
 
 const mainSliderLarge = new Swiper('.large-banner-slider', {
 	clickable: true,
@@ -32,10 +42,12 @@ const mainSliderLarge = new Swiper('.large-banner-slider', {
 	},
 });
 
-const mainSliderSmall = new Swiper('.card-slider', {
+const weekendSlider = new Swiper('.weekend-slider', {
 	clickable: true,
 	speed: 1500,
 	slidesPerView: 'auto',
+	spaceBetween: 20,
+	allowTouchMove: false,
 
 	navigation: {
 		nextEl: '.weekend-button-next',
@@ -55,6 +67,7 @@ const productSlider = new Swiper('.product-slider', {
 	speed: 1500,
 	slidesPerView: 'auto',
 	spaceBetween: 20,
+	allowTouchMove: false,
 
 	navigation: {
 		nextEl: '.product-button-next',
@@ -67,6 +80,7 @@ const bestSlider = new Swiper('.best-slider', {
 	speed: 1500,
 	slidesPerView: 'auto',
 	spaceBetween: 20,
+	allowTouchMove: false,
 
 	navigation: {
 		nextEl: '.best-button-next',
@@ -79,6 +93,7 @@ const newsSlider = new Swiper('.news-slider', {
 	speed: 1500,
 	slidesPerView: 'auto',
 	spaceBetween: 20,
+	allowTouchMove: false,
 
 	navigation: {
 		nextEl: '.news-button-next',
@@ -113,7 +128,6 @@ const galerySlider = new Swiper('.galery-slider', {
 const reviewsSlider = new Swiper('.reviews-slider', {
 	clickable: true,
 	speed: 2500,
-	// slidesPerView: 'auto',
 	spaceBetween: 20,
 
 	navigation: {
@@ -128,3 +142,18 @@ const noveltySlider = new Swiper('.novelty-slider', {
 	slidesPerView: 'auto',
 	spaceBetween: 20,
 });
+
+const productGalery = new Swiper('.product-galery', {
+	clickable: true,
+	speed: 1500,
+
+
+	thumbs: {
+		swiper: {
+			el: '.product-galery-mini',
+			slidesPerView: 4,
+			spaceBetween: 8,
+		},
+	},
+});
+

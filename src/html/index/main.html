@@ -134,9 +134,7 @@
 							<div class="card">
 
 								<!-- discount -->
-								<div class="discount">
-									<div class="discount__text">-35%</div>
-								</div>
+								<div class="discount"></div>
 
 								<div class="card-icons">
 									<!-- fovourite icon -->
@@ -145,44 +143,50 @@
 											<use xlink:href="img/sprite.svg#favourite"></use>
 										</svg>
 									</div>
-
-									<!-- fovourite icon -->
-									<!-- <div class="card-icons__border">
-											<svg class="header-control-svg" stroke="currentColor">
-												<use xlink:href="img/sprite.svg#eye"></use>
-											</svg>
-										</div> -->
 								</div>
 
-								<!-- slider -->
-								<div class="card-slider swiper-content">
-									<div class="card-slider__wrapper swiper-wrapper">
+								<!-- slider in card -->
+								<div class="weekend-slider swiper-content">
+									<div class="card-img-slider__wrapper swiper-wrapper">
 										<!--slide-1-->
-										<div class="card-slider__slide swiper-slide">
+										<div class="card-img-slider__slide swiper-slide">
 											<!-- Картинка -->
-											<img src="@img/card-img/card-img-1.jpg" alt="" title="">
+											<div class="card__img">
+												<a href="#" class="card__img-link">
+													<img src="@img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз">
+												</a>
+											</div>
 										</div>
 										<!--slide-2-->
-										<div class="card-slider__slide swiper-slide">
+										<div class="card-img-slider__slide swiper-slide">
 											<!-- Картинка -->
-											<img src="@img/card-img/card-img-1.jpg" alt="" title="">
+											<div class="card__img">
+												<a href="#" class="card__img-link">
+													<img src="@img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз">
+												</a>
+											</div>
 										</div>
-
 										<!--slide-3-->
-										<div class="card-slider__slide swiper-slide">
+										<div class="card-img-slider__slide swiper-slide">
 											<!-- Картинка -->
-											<img src="@img/card-img/card-img-1.jpg" alt="" title="">
+											<div class="card__img">
+												<a href="#" class="card__img-link">
+													<img src="@img/card-img/card-img-1.jpg" alt="Букет 25 роз" title="Букет 25 роз">
+												</a>
+											</div>
 										</div>
 									</div>
+									<!-- pagination -->
+									<div class="swiper-pagination"></div>
 								</div>
-
-
 								<!-- slider - end -->
 
 								<div class="card__information">
 
 									<div class="card__information-block">
-										<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+										<a href="#" class="card-title__link">
+											<h3 class="card__title">Букет 25 роз Нежный микс</h3>
+										</a>
 										<div class="card__subtitle">Высота: 60 см, Ширина: 35 см</div>
 									</div>
 
@@ -212,6 +216,7 @@
 						</article>
 					</div>
 				</div>
+
 
 				<!-- navigation -->
 				<div class="weekend-button-prev button-prev">

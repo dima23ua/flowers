@@ -80,12 +80,8 @@
 	visibility: visible;
 }
 
-
-.catalog-wrapper.open .catalog-menu__header {
-	// left: 0;
-}
-
 //  .popup.header-delivery
+
 .popup.header-delivery {
 		max-width: 100%;
 }
@@ -110,13 +106,20 @@
 		height: 2px;
 		background-color: var(--dark);
 		border-radius: 5px;
-		
 	}
+
 	&:before {
 		transform: rotate(45deg);
 	}
 
 	&:after {
 		transform: rotate(-45deg);
+	}
+
+	&:hover {
+		&:before,
+		&:after {
+			background-color: var(--red);
+		}
 	}
 }
